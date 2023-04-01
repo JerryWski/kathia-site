@@ -1,6 +1,8 @@
+import React from 'react'
+import NavigationBar from './components/NavigationBar'
 
-const App = () => {
-  return <div>hello</div>
+const App: React.FC = () => {
+  return <div><NavigationBar /></div>
 }
 
 export default App
