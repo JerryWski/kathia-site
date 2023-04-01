@@ -1,6 +1,7 @@
 html {
   font-size: 13px;
   scroll-behavior: smooth;
+  font-family: var(--secondfont);
 }
 *,
 *::after,
@@ -10,6 +11,21 @@ html {
   box-sizing: border-box;
 }
 body {
- min-height: 100%;
+  min-height: 100%;
 }
-
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: rgb(88, 85, 85);
+  --bg-rose: hsl(274, 47%, 97%);
+  --lightrose: hsl(12, 50%, 92%);
+  --underline-rose: hsl(0, 61%, 73%);
+  --font: 'Roboto', sans-serif;
+  --secondfont: 'Noto Serif Display', serif;
+  /* // font-family: 'Dancing Script', cursive;
+  // font-family: 'Elsie', cursive;
+  // font-family: 'IBM Plex Sans', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Noto Serif Display', serif; */
+}

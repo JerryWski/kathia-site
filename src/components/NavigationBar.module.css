@@ -1,0 +1,15 @@
+.nav_bar {
+    background-color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_bar__logo {
+    width: 60%;
+}
+.nav_bar__lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

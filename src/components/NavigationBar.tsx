@@ -2,55 +2,50 @@ import styles from './NavigationBar.module.css'
 
 const NavigationBar: React.FC = () => {
   return (
-    <header>
-      <nav>
-        <div>
-          <a href='#home'>
-            <img src='./src/img/logo-one.png' alt='logo' />
-          </a>
-        </div>
-        <ul>
-          <li>
-            <a href=''>O Nas</a>
-          </li>
-          <li>
-            <a href=''>Usługi</a>
-          </li>
-          <li>
-            <a href=''>Zespół</a>
-          </li>
-          <li>
-            <a href=''>Cennik</a>
-          </li>
-          <li>
-            <a href=''>Galeria</a>
-          </li>
-          <li>
-            <a href=''>Kontakt</a>
-          </li>
-        </ul>
-        <ul>
-          <li>+887 545 887</li>
-        </ul>
-        <ul>
-          <li>
-            <a href=''></a>
-          </li>
-          <li>
-            <a href=''></a>
-          </li>
-          <li>
-            <a href=''></a>
-          </li>
-        </ul>
-        {/* <button class='hamburger hamburger--collapse' type='button'>
+    <nav className={styles.nav_bar}>
+      <div>
+        <a href=''>
+          <img
+            className={styles.nav_bar__logo}
+            src={require('../images/logo-one.png')}
+            alt='logo'
+          />
+        </a>
+      </div>
+      <ul className={styles.nav_bar__lists}>
+        <li>
+          <a href=''>O mnie</a>
+        </li>
+        <li>
+          <a href=''>Portfolio</a>
+        </li>
+        <li>
+          <a href=''>Działalność</a>
+        </li>
+        <li>
+          <a href=''>Kontakt</a>
+        </li>
+      </ul>
+      <ul className={styles.nav_bar__lists}>
+        <li>+ 531 767 911</li>
+      </ul>
+      <ul className={styles.nav_bar__lists}>
+        <li>
+          <a href=''>insta ikonka</a>
+        </li>
+        <li>
+          <a href=''>email ikonka</a>
+        </li>
+      </ul>
+
+      {/* <button class='hamburger hamburger--collapse' type='button'>
           <span class='hamburger-box'>
             <span class='hamburger-inner'></span>
           </span>
         </button> */}
-      </nav>
+    </nav>
 
-      {/* <div class='hero-container'>
+  /* <div class='hero-container'>
         <div class='wrapper one'>
           <h1 class='wrapper__header'>
             <span class='wrapper__header wrapper__header-beauty'>Beauty</span>
@@ -73,8 +68,7 @@ const NavigationBar: React.FC = () => {
             alt='woman'
           />
         </div>
-      </div> */}
-    </header>
+      </div> */
   )
 }
 
