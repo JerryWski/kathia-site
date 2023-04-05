@@ -21,7 +21,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
           <a href='#home'>
             <img
               className={styles.logo_container__image}
-              src={require('../images/logo-two.png')}
+              src={require('../images/logo-four.png')}
               alt='logo'
             />
           </a>

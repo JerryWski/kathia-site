@@ -15,7 +15,7 @@ html {
 
 :root {
   --white: hsl(0, 0%, 100%);
-  --black: rgb(88, 85, 85);
+  --black: rgb(68, 60, 60);
   --bg-rose: hsl(274, 47%, 97%);
   --beige: hsl(28, 29%, 75%);
   --font: 'Roboto', sans-serif;
