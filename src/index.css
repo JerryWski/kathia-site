@@ -2,6 +2,8 @@ html {
   font-size: 13px;
   scroll-behavior: smooth;
   font-family: var(--secondfont);
+  min-height: 200%;
+  
 }
 *,
 *::after,
@@ -10,15 +12,12 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  min-height: 100%;
-}
+
 :root {
   --white: hsl(0, 0%, 100%);
   --black: rgb(88, 85, 85);
   --bg-rose: hsl(274, 47%, 97%);
-  --lightrose: hsl(12, 50%, 92%);
-  --underline-rose: hsl(0, 61%, 73%);
+  --beige: hsl(28, 29%, 75%);
   --font: 'Roboto', sans-serif;
   --secondfont: 'Noto Serif Display', serif;
   /* // font-family: 'Dancing Script', cursive;

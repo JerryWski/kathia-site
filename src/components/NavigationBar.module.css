@@ -1,5 +1,5 @@
 .nav_bar {
-  background-color: var(--lightrose);
+  background-color: var(--beige);
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
@@ -17,18 +17,18 @@
   max-width: 65%;
 }
 .nav_bar__list {
+  
   width: 100%;
   display: flex;
   position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 88px;
-  height: 88vh;
-  /* margin-right: 0; */
+  top: 86px;
+  height: 100vh;
   padding: 10px;
-  /* transform: translateY(-150%);
-    transition: 0.8s transform cubic-bezier(0.65, 0.05, 0.36, 1); */
+  transform: translateX(-150%);
+    transition: 0.8s transform cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .nav_bar__list_item {
   display: flex;
@@ -43,6 +43,9 @@
 }
 .nav_bar__social {
   display: none;
+}
+.active {
+  transform: translateX(0%);
 }
 
 @media (min-width: 900px) {
@@ -66,6 +69,7 @@
     width: fit-content;
     justify-content: center;
     height: 0;
+    transform: translateY(0%);
     top: 0;
   }
   .nav_bar__list_item a {

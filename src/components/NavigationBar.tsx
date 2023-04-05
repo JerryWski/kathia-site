@@ -1,6 +1,19 @@
-import styles from './NavigationBar.module.css'
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+import React, { useState } from 'react';
+import HamburgerButton from './HamburgerButton';
+import styles from './NavigationBar.module.css';
 
-const NavigationBar: React.FC = () => {
+interface NavigationBarProps {
+  toggleOverLay: () => void
+}
+
+const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleActive: () => void = () => {
+    setIsActive(!isActive);
+  };
+
   return (
     <>
       <nav className={styles.nav_bar}>
@@ -13,18 +26,28 @@ const NavigationBar: React.FC = () => {
             />
           </a>
         </div>
-        <ul className={styles.nav_bar__list}>
+        <ul
+          className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
+        >
           <li className={styles.nav_bar__list_item}>
-            <a href=''>O mnie</a>
+            <a className={styles.links} href=''>
+              O mnie
+            </a>
           </li>
           <li className={styles.nav_bar__list_item}>
-            <a href=''>Portfolio</a>
+            <a className={styles.links} href=''>
+              Portfolio
+            </a>
           </li>
           <li className={styles.nav_bar__list_item}>
-            <a href=''>Działalność</a>
+            <a className={styles.links} href=''>
+              Działalność
+            </a>
           </li>
           <li className={styles.nav_bar__list_item}>
-            <a href=''>Kontakt</a>
+            <a className={styles.links} href=''>
+              Kontakt
+            </a>
           </li>
         </ul>
         <ul className={styles.nav_bar__social}>
@@ -44,39 +67,10 @@ const NavigationBar: React.FC = () => {
             </a>
           </li>
         </ul>
-
-        {/* <button class='hamburger hamburger--collapse' type='button'>
-        <span class='hamburger-box'>
-          <span class='hamburger-inner'></span>
-        </span>
-      </button> */}
+        <HamburgerButton isActive={isActive} toggleActive={toggleActive} toggleOverlay={toggleOverLay} />
       </nav>
-
-      {/* <div class='hero-container'>
-              <div class='wrapper one'>
-                  <h1 class='wrapper__header'>
-                      <span class='wrapper__header wrapper__header-beauty'>Beauty</span>
-                      <span class='wrapper__header wrapper__header-logic'>Logic</span>
-                  </h1>
-                  <h2 class='wrapper__subheader'>Agata Pulchny - Ambroziak</h2>
-                  <p class='wrapper__text'>
-                      Odkryj piękno swojej natury z Beauty Logic. Nasz zespół specjalistów
-                      dąży do tego, aby pomóc Ci poczuć się jak najlepiej. Zaufaj Beauty
-                      Logic i pozwól nam wyjąć to, co najlepsze w Tobie.
-                  </p>
-                  <a class='button-link' href='#offers'>
-                      <span class='wrapper__button'>Sprawdź Ofertę</span>
-                  </a>
-              </div>
-              <div class='wrapper two'>
-                  <img
-                      class='wrapper__image'
-                      src='./src/img/hero-img.png'
-                      alt='woman' />
-              </div>
-          </div> */}
     </>
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;
