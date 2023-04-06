@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .logo_container {
     margin-left: 20px;
@@ -84,6 +85,7 @@
     padding: 10px;
     color: var(--black);
     margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     min-width: 100px;
   }
@@ -99,6 +101,16 @@
     text-decoration: none;
     color: var(--black);
     margin: 20px;
+  }
+
+  span {
+
+    border-bottom: 1px solid var(--white);
+    width: 72%;
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    opacity: .5;
   }
 }
 

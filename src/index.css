@@ -15,7 +15,7 @@ html {
 
 :root {
   --white: hsl(0, 0%, 100%);
-  --black: rgb(68, 60, 60);
+  --black: #443c3c;
   --bg-rose: hsl(274, 47%, 97%);
   --beige: hsl(28, 29%, 75%);
   --font: 'Roboto', sans-serif;
@@ -28,4 +28,5 @@ html {
   // font-family: 'Open Sans', sans-serif;
   // font-family: 'Montserrat', sans-serif;
   // font-family: 'Noto Serif Display', serif; */
+  /* font-family: 'Chamberi Display'; */
 }

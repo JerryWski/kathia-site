@@ -6,37 +6,37 @@
     gap: 40px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: rgb(243, 239, 231);
+    background-color: rgba(210, 190, 173, 1);
+background-image: linear-gradient(-90deg, rgba(210, 190, 173, 1) 50%, rgba(255, 255, 255, 1) 41%);
     position: relative;
 }
 .welcome_header {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--black);
-    font-family: var(--font);
+    font-family: 'Chamberi Display';
 }
 .welcome_header h1 {
     font-weight: 300;
 }
 .welcome_image__container {
-  border-radius: 50%; 
-  background-color: var(--beige);
-  width: 300px;
-  height: 300px;
-  /* overflow: hidden; */
+  width: 400px;
 }
 .welcome_image {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 @media (min-width: 900px) {
     .welcome_section {
-        gap: 115px;
+        gap: 135px;
     }
-    .welcome_header {
+    .welcome_header h1 {
         font-size: 2.8rem;
+        font-family: 'Chamberi Display';
     }
 
+}
+@media (max-width: 727px) {
+    
 }

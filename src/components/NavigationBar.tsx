@@ -68,6 +68,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
           </li>
         </ul>
         <HamburgerButton isActive={isActive} toggleActive={toggleActive} toggleOverlay={toggleOverLay} />
+        <span></span>
       </nav>
     </>
   );
