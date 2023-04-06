@@ -10,7 +10,7 @@ const WelcomeSection: React.FC = () => {
         </div>
         <div className={styles.welcome_image__container}>
           <img
-            src={require('../images/woman-test.jpg')}
+            src={require('../images/kathia.png')} alt='woman'
             className={styles.welcome_image}
           ></img>
         </div>
