@@ -15,6 +15,7 @@
   position: relative;
 }
 .welcome_header__container {
+    margin-top: 20px;
   font-size: 1.8rem;
   color: var(--black);
   font-family: 'Chamberi Display';
@@ -22,9 +23,11 @@
 .welcome_text {
     font-size: 1.2rem;
     text-align: center;
+    font-style: italic;
+    opacity: .8;
 }
 .welcome_header {
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
     word-break: break-word;
   font-weight: 600;
@@ -40,7 +43,7 @@
 
 @media (min-width: 900px) {
   .welcome_section {
-    gap: 95px;
+    gap: 45px;
   }
   .welcome_text {
     font-size: inherit;
@@ -53,6 +56,9 @@
     padding: 2%;
     font-size: 5.8rem;
     font-family: 'Chamberi Display';
+  }
+  .welcome_image__container {
+    width: 600px;
   }
 }
 @media (max-width: 727px) {

@@ -13,7 +13,7 @@ const WelcomeSection: React.FC = () => {
           <picture>
             <source
               srcSet={require('../images/stowidokow3-logo-half.png')}
-              media='(max-width: 1489px)'
+              media='(max-width: 1639px)'
             />
             <img
               src={require('../images/stowidokow3-logo.png')}
