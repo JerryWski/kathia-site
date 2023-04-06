@@ -7,17 +7,20 @@ const WelcomeSection: React.FC = () => {
       <div className={styles.welcome_section}>
         <div className={styles.welcome_header}>
           <p>#interior, #home, #passion</p>
-          <h1>@stowidokow.home</h1>
+          <h1>Let&apos;s Make Your Interior Better</h1>
         </div>
         <div className={styles.welcome_image__container}>
-        <picture>
-        <source srcSet={require('../images/stowidokow3-logo-half.png')} media="(max-width: 727px)" />
-        <img
-          src={require('../images/stowidokow3-logo.png')}
-          alt="Logo Stowidoków"
-          className={styles.welcome_image}
-        />
-      </picture>
+          <picture>
+            <source
+              srcSet={require('../images/stowidokow3-logo-half.png')}
+              media='(max-width: 727px)'
+            />
+            <img
+              src={require('../images/stowidokow3-logo.png')}
+              alt='Logo Stowidoków'
+              className={styles.welcome_image}
+            />
+          </picture>
         </div>
       </div>
     </section>
