@@ -1,7 +1,7 @@
 {
   "name": "kathia-site",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://jerrywski.github.io/kathia-site/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
