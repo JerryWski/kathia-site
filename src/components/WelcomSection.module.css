@@ -33,6 +33,9 @@
   word-break: break-word;
   font-weight: 600;
 }
+.header_italic {
+  font-style: italic;
+}
 .welcome_image__container {
   width: 400px;
 }
@@ -55,13 +58,16 @@
   .welcome_header {
     margin-top: 60px;
     padding: 2%;
-
-    font-size: 5.8rem;
+    width: 700px;
+    font-size: 5rem;
     font-family: 'Chamberi Display', sans-serif;
+  }
+  .header_italic {
+    font-style: italic;
+    text-transform: lowercase;
   }
   .welcome_image__container {
     width: 600px;
   }
 }
-@media (max-width: 727px) {
-}
+

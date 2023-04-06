@@ -7,7 +7,10 @@ const WelcomeSection: React.FC = () => {
       <div className={styles.welcome_section}>
         <div className={styles.welcome_header__container}>
           <p className={styles.welcome_text}>#interior, #home, #passion</p>
-          <h1 className={styles.welcome_header}>Let&apos;s Make Your Interior Better</h1>
+          <h1 className={styles.welcome_header}>
+            Let&apos;s <span className={styles.header_italic}> Make</span> Your
+            Interior <span className={styles.header_italic}>Better</span>
+          </h1>
         </div>
         <div className={styles.welcome_image__container}>
           <picture>

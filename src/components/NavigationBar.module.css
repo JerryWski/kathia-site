@@ -103,8 +103,7 @@
     margin: 20px;
   }
 
-  span {
-
+  .navbar_underline {
     border-bottom: 1px solid var(--white);
     width: 72%;
     position: absolute;
