@@ -24,7 +24,7 @@
   font-size: 1.3rem;
   text-align: center;
   font-style: italic;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .welcome_text__bottom {
   display: none;
@@ -50,6 +50,15 @@
   width: 100%;
   object-fit: cover;
 }
+/* .test {
+  position: absolute;
+  width: 40%;
+  left: -40%;
+  top: -30%;
+  object-fit: contain;
+  z-index: 0;
+  border-radius: 50%;
+} */
 
 @media (min-width: 900px) {
   .welcome_section {
@@ -81,6 +90,10 @@
   
   .welcome_image__container {
     width: 600px;
+    position: relative;
+  }
+  .test {
+    
   }
 }
 

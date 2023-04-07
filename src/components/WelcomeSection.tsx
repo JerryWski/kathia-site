@@ -28,6 +28,11 @@ const WelcomeSection: React.FC = () => {
               className={styles.welcome_image}
             />
           </picture>
+          {/* <img
+            src={require('../images/insta-image.png')}
+            alt='Logo Stowidoków'
+            className={styles.test}
+          /> */}
         </div>
       </div>
     </section>
