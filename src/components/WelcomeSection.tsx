@@ -13,22 +13,28 @@ const WelcomeSection: React.FC = () => {
           </h1>
         </div>
         <div className={styles.welcome_image__container}>
-          <picture>
-            <source
-              srcSet={require('../images/stowidokow3-logo-half.png')}
-              media='(max-width: 1344px)'
-            />
-            <img
-              src={require('../images/stowidokow3-logo.png')}
-              alt='Logo Stowidoków'
-              className={styles.welcome_image}
-            />
-          </picture>
-          {/* <img
-            src={require('../images/insta-image.png')}
-            alt='Logo Stowidoków'
-            className={styles.test}
-          /> */}
+          <div className={styles.slider_wrapper}>
+            <picture>
+              <source
+                srcSet={require('../images/stowidokow3-logo-half.png')}
+                media='(max-width: 1319px)'
+              />
+              <img
+                src={require('../images/stowidokow3-logo.png')}
+                alt='brand-logo'
+                className={styles.welcome_image}
+              />
+            </picture>
+          </div>
+          <div className={styles.slider_wrapper}>
+            <picture>
+              <img
+                src={require('../images/insta-image.png')}
+                alt='interior-house'
+                className={styles.welcome_image}
+              />
+            </picture>
+          </div>
         </div>
         <p className={styles.welcome_text__bottom}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit Culpa
