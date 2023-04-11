@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavigationBar from './components/NavigationBar';
 import styles from './App.module.css';
 import WelcomeSection from './components/WelcomeSection';
+import AboutMe from './components/AboutMe';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       </header>
       <main>
         <WelcomeSection />
+        <AboutMe />
       </main>
     </>
   );

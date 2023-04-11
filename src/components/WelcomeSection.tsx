@@ -6,7 +6,7 @@ const WelcomeSection: React.FC = () => {
     <section>
       <div className={styles.welcome_section}>
         <div className={styles.welcome_header__container}>
-          <p className={styles.welcome_text__top}>#interior, #home, #design</p>
+          {/* <p className={styles.welcome_text__top}>#interior, #home, #design</p> */}
           <h1 className={styles.welcome_header}>
             Let&apos;s <span className={styles.header_italic}> Make</span> Your
             Interior <span className={styles.header_italic}>Better</span>
@@ -17,7 +17,7 @@ const WelcomeSection: React.FC = () => {
             <picture>
               <source
                 srcSet={require('../images/stowidokow3-logo-half.png')}
-                media='(max-width: 1319px)'
+                media='(max-width: 1339px)'
               />
               <img
                 src={require('../images/stowidokow3-logo.png')}
@@ -27,6 +27,7 @@ const WelcomeSection: React.FC = () => {
             </picture>
           </div>
           <div className={styles.slider_wrapper}>
+            {/* trzeba bedzie zmienić na końcu na sam tag img */}
             <picture>
               <img
                 src={require('../images/insta-image.png')}

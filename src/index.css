@@ -18,8 +18,8 @@ html {
   --black: #443c3c;
   --bg-rose: hsl(274, 47%, 97%);
   --beige: hsl(28, 29%, 75%);
-  --font: 'Roboto', sans-serif;
-  --secondfont: 'Noto Serif Display', serif;
+  --font: 'Old Standard TT', serif;
+  --secondfont: 'Montserrat', sans-serif;
   /* // font-family: 'Dancing Script', cursive;
   // font-family: 'Elsie', cursive;
   font-family: 'Old Standard TT', serif;
