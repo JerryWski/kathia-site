@@ -1,7 +1,7 @@
 .about_wrapper {
     margin-top: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: start;
     flex-wrap: wrap;
 }
@@ -9,25 +9,26 @@
     padding: 10px;
     width: fit-content;
     display: flex;
-    align-self: start;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100px;
-
+    color: var(--black);
+    margin-bottom: 30px;
 }
 .intro_text {
-    font-family: var(--secondfont);
-    font-size: 1.2rem;
+    font-family: var(--font);
+    font-size: 1.15rem;
     text-align: left;
     word-break: break-word;
     font-style: italic;
-    text-transform: uppercase;
     letter-spacing: .1rem;
+}
+.intro_heading {
+    font-size: 5rem;
+    font-family: var(--font);
 }
 
 .image_container {
     width: 350px;
-    padding: 10px;
+    padding: 10px; 
 }
 .profile_image {
     height: auto;
