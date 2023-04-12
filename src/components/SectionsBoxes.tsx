@@ -8,21 +8,30 @@ const SectionBoxes: React.FC = () => {
       <div className={styles.boxes_container}>
         <div className={styles.box_one}>
           <div className={styles.box_border}></div>
-          <img src={require('../images/coffie-woman3.png')}></img>
+          <img
+            className={styles.woman_image}
+            src={require('../images/coffie-woman3.png')}
+          ></img>
           <a className={styles.box_one__link} href=''>
             O Mnie
           </a>
         </div>
         <div className={styles.box_two}>
           <div className={styles.box_border}></div>
-          <img src={require('../images/coffie-woman2.png')}></img>
+          <img
+            className={styles.woman_image}
+            src={require('../images/coffie-woman2.png')}
+          ></img>
           <a className={styles.box_two__link} href=''>
             Portfolio
           </a>
         </div>
         <div className={styles.box_three}>
           <div className={styles.box_border}></div>
-          <img className={styles.coop} src={require('../images/co-op.png')}></img>
+          <img
+            className={styles.coop}
+            src={require('../images/co-op.png')}
+          ></img>
           <a className={styles.box_three__link} href=''>
             Działalność
           </a>

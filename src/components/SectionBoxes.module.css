@@ -55,7 +55,7 @@
   transform: scale(1.1);
 }
 
-img {
+.woman_image {
   width: 40%;
   top: 20%;
   position: absolute;
