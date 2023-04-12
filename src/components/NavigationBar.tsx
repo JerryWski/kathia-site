@@ -7,6 +7,21 @@ interface NavigationBarProps {
   toggleOverLay: () => void
 }
 
+interface NavItemsProps {
+  href: string
+  label: string
+}
+
+const NavItem: React.FC<NavItemsProps> = ({ href, label }) => {
+  return (
+    <li className={styles.nav_bar__list_item}>
+      <a className={styles.links} href={href}>
+        {label}
+      </a>
+    </li>
+  );
+};
+
 const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -29,26 +44,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
         <ul
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
-          <li className={styles.nav_bar__list_item}>
-            <a className={styles.links} href=''>
-              O mnie
-            </a>
-          </li>
-          <li className={styles.nav_bar__list_item}>
-            <a className={styles.links} href=''>
-              Portfolio
-            </a>
-          </li>
-          <li className={styles.nav_bar__list_item}>
-            <a className={styles.links} href=''>
-              Działalność
-            </a>
-          </li>
-          <li className={styles.nav_bar__list_item}>
-            <a className={styles.links} href=''>
-              Kontakt
-            </a>
-          </li>
+          <NavItem href='/about-me' label='O mnie' />
+          <NavItem href='/about-me' label='Portfolio' />
+          <NavItem href='/about-me' label='Działalność' />
+          <NavItem href='/about-me' label='Kontakt' />
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
@@ -67,7 +66,11 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
             </a>
           </li>
         </ul>
-        <HamburgerButton isActive={isActive} toggleActive={toggleActive} toggleOverlay={toggleOverLay} />
+        <HamburgerButton
+          isActive={isActive}
+          toggleActive={toggleActive}
+          toggleOverlay={toggleOverLay}
+        />
         <span className={styles.navbar_underline}></span>
       </nav>
     </>

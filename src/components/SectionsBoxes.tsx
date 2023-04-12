@@ -7,13 +7,13 @@ const SectionBoxes: React.FC = () => {
         <span className={styles.header_underline}></span>
       <div className={styles.boxes_container}>
         <div className={styles.box_one}>
-          <h3 className={styles.box_one__header}>O mnie</h3>
+          <a className={styles.box_one__link} href=''>O mnie</a>
         </div>
         <div className={styles.box_two}>
-          <h3 className={styles.box_two__header}>Portfolio</h3>
+          <a className={styles.box_two__link} href=''>Portfolio</a>
         </div>
         <div className={styles.box_three}>
-          <h3 className={styles.box_three__header}>Działalność</h3>
+          <a className={styles.box_three__link} href=''>Działalność</a>
         </div>
       </div>
     </div>

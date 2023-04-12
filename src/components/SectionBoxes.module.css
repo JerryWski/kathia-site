@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 80px;
+  margin-top: 100px;
   color: var(--black);
   padding: 10px;
 }
@@ -13,14 +13,14 @@
   font-family: var(--font);
 }
 .header_underline {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: 1px;
-    background-color: var(--black);
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 1px;
+  background-color: var(--black);
 }
 .boxes_container {
-    margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
