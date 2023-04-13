@@ -25,49 +25,40 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid var(--white);
+  /* background-color: rgb(219, 203, 195); */
 }
 .box_one,
 .box_two,
 .box_three {
   position: relative;
-  background-color: var(--beige);
-  border: 1px solid var(--white);
+  background-color: var(--white);
   width: 350px;
   height: 300px;
   display: flex;
   font-family: var(-secondfont);
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin: 15px;
-}
-.box_one {
-}
-.box_two {
-}
-.box_three {
-  overflow: hidden;
-  background-color: transparent;
   transform: scale(1);
+  overflow: hidden;
 }
-.box_three:hover .coop {
+.box_one:hover .box_image,.box_two:hover .box_image, .box_three:hover .box_image {
   opacity: 1;
   transform: scale(1.1);
 }
-
 .woman_image {
   width: 40%;
   top: 20%;
   position: absolute;
 }
-.coop {
+.box_image {
   position: absolute;
   width: 100%;
   top: 0;
   object-fit: contain;
-  opacity: .7;
+  opacity: 0.7;
   z-index: -1;
-  transition: 1s all linear;
+  transition: .5s all linear;
 }
 
 .box_border {
@@ -75,24 +66,30 @@
   border: 2px solid var(--white);
   width: 300px;
   align-self: center;
-  /* top: 5%;
-  bottom: 5%; */
   height: 250px;
-  
 }
 .box_one__link,
 .box_two__link,
 .box_three__link {
-  font-size: 1.5rem;
-  margin-bottom: 47px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   /* padding: 100px;
   border: 1px solid white; */
   text-decoration: none;
   color: var(--black);
   isolation: isolate;
+  text-align: center;
   padding: 10px 25px;
+  min-width: 166px;
   background-color: var(--white);
+  transition: .3s all linear;
 }
+.box_one__link:hover, .box_two__link:hover, .box_three__link:hover {
+  color: var(--white);
+  background-color: var(--black);
+  
+}
+
 @media (max-width: 500px) {
   .box_one,
   .box_two,
@@ -103,10 +100,10 @@
   .box_one__link,
   .box_two__link,
   .box_three__link {
-    margin-bottom: 25px;
-    font-size: 1.2rem;
-    padding: 5px 20px;
+    font-size: 1rem;
+    padding: 5px 30px;
   }
+
   .box_border {
     width: 270px;
     height: 200px;
