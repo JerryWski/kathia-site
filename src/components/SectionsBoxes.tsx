@@ -41,6 +41,30 @@ const SectionBoxes: React.FC = () => {
           </a>
         </div>
       </div>
+      <div className={styles.text_section}>
+        <p className={styles.text_section__bg}>Interior</p>
+        <p className={styles.text_about}>
+          Zapraszam Cię do świata, w którym pokażę Ci moją pasję oraz
+          doświadczenia związane z projektowaniem wnętrza naszego domu.
+        </p>
+        <p className={styles.text_about}>
+          Jeśli chcesz poznać mnie lepiej, koniecznie zajrzyj do sekcji
+          <span className={styles.text_span}> O mnie</span>. Tam dowiesz się o
+          moich doświadczeniach związanych z projektowaniem wnętrz oraz miłości
+          do kawy.
+        </p>
+        <p className={styles.text_about}>
+          W dziale<span className={styles.text_span}> Portfolio</span>{' '}
+          prezentuję moje dotychczasowe projekty i realizacje, które z pewnością
+          Cię zainspirują.
+        </p>
+        <p className={styles.text_about}>
+          Jeśli interesuje Cię moja działalność oraz chcesz dowiedzieć się
+          więcej o usługach, jakie oferuję, zajrzyj do sekcji
+          <span className={styles.text_span}> Działalność</span>. Tam znajdziesz
+          szczegółowe informacje na temat mojej pracy i możliwości współpracy.
+        </p>
+      </div>
     </div>
   );
 };

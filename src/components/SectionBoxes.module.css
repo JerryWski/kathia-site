@@ -14,7 +14,7 @@
   font-family: var(--font);
 }
 .boxes_header__span {
-  opacity: .8;
+  opacity: 0.8;
 }
 .header_underline {
   display: block;
@@ -46,7 +46,9 @@
   transform: scale(1);
   overflow: hidden;
 }
-.box_one:hover .box_image,.box_two:hover .box_image, .box_three:hover .box_image {
+.box_one:hover .box_image,
+.box_two:hover .box_image,
+.box_three:hover .box_image {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -62,7 +64,7 @@
   object-fit: contain;
   opacity: 0.7;
   z-index: -1;
-  transition: .5s all linear;
+  transition: 0.5s all linear;
 }
 
 .box_border {
@@ -87,14 +89,67 @@
   padding: 10px 25px;
   min-width: 166px;
   background-color: var(--white);
-  transition: .3s all linear;
+  transition: 0.3s all linear;
 }
-.box_one__link:hover, .box_two__link:hover, .box_three__link:hover {
+.box_one__link:hover,
+.box_two__link:hover,
+.box_three__link:hover {
   color: var(--white);
   background-color: var(--black);
-  
+}
+.text_section {
+  position: relative;
+  font-family: var(--secondfont);
+  word-break: break-word;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 5px;
+  line-height: 20px;
 }
 
+.text_about {
+  margin: 15px 0 15px 0;
+}
+.text_span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  font-family: var(--font);
+}
+.text_section__bg {
+  display: none;
+}
+@media (min-width: 900px) {
+  .text_section {
+    line-height: 25px;
+    font-size: 1.3rem;
+    max-width: 800px;
+    text-align: center;
+  }
+  .text_about {
+    margin: 20px;
+  }
+  .text_span {
+    font-size: 1.4rem;
+  }
+  .text_section__bg {
+    font-family: var(--font);
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: auto;
+    top: 40px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 13rem;
+    color: var(--black);
+    text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+      -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+    letter-spacing: 60px;
+    line-height: 150px;
+    opacity: 0.1;
+  }
+}
 @media (max-width: 500px) {
   .box_one,
   .box_two,
@@ -108,7 +163,6 @@
     font-size: 1rem;
     padding: 5px 30px;
   }
-
   .box_border {
     width: 270px;
     height: 200px;
