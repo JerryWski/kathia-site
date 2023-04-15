@@ -3,6 +3,7 @@ import NavigationBar from './components/NavigationBar';
 import styles from './App.module.css';
 import WelcomeSection from './components/WelcomeSection';
 import SectionBoxes from './components/SectionsBoxes';
+import ContactSection from './components/ContactSection';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -27,6 +28,7 @@ const App: React.FC = () => {
       <main>
         <WelcomeSection />
         <SectionBoxes />
+        <ContactSection />
       </main>
     </>
   );

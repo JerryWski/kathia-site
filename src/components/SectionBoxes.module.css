@@ -103,7 +103,7 @@
   word-break: break-word;
   margin: 0 auto;
   max-width: 500px;
-  padding: 5px;
+  padding: 15px;
   line-height: 20px;
 }
 
@@ -121,6 +121,7 @@
 }
 @media (min-width: 900px) {
   .text_section {
+    margin-top: 30px;
     line-height: 25px;
     font-size: 1.3rem;
     max-width: 800px;
