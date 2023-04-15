@@ -31,10 +31,12 @@ const ContactSection: React.FC = () => {
         <a className={styles.shortcuts_links} href=''>Działalność</a>
         <a className={styles.shortcuts_links} href=''>Polityka prywatności</a>
       </div>
-      <img
-        className={styles.contact_logo}
-        src={require('../images/stowidokow4-logo.png')}
-      ></img>
+      <a className={styles.contact_logo__link} href="#home">
+          <img
+            className={styles.contact_logo}
+            src={require('../images/stowidokow4-logo.png')}
+          ></img>
+      </a>
     </section>
   );
 };

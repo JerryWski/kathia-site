@@ -32,7 +32,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
   return (
     <>
       <nav className={styles.nav_bar}>
-        <div className={styles.logo_container}>
+        <div id='home' className={styles.logo_container}>
           <a href='#home'>
             <img
               className={styles.logo_container__image}

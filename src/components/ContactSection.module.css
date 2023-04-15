@@ -40,9 +40,13 @@
 .icon_link:hover {
     color: var(--white);
 }
-.contact_logo {
+.contact_logo__link {
     margin-top: 30px;
     width: 50%;
+    
+}
+.contact_logo {
+    width: 100%;
 }
 .shortcuts {
     margin-top: 30px;
@@ -74,11 +78,17 @@
         width: auto;
         order: 2;
     }
+    .shortcuts_links {
+        margin: 5px 5px 5px 0;
+    }
     .contact_header {
         margin-top: 20px;
     }
-    .contact_logo {
+    .contact_logo__link {
         object-fit: contain;
         max-width: 300px;
+    }
+    .contact_logo {
+        width: 100%;
     } 
 }
