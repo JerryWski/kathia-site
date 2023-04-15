@@ -1,8 +1,14 @@
-.wrapper {
+.contact_section {
     margin-top: 80px;
     padding: 10px;
     background-color: var(--black);
     color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,9 +33,29 @@
 .icon_link {
     text-decoration: none;
     color: inherit;
-    margin: 0 15px 0 15px;
+    padding: 3px;
+    margin: 0 13px 0 13px;
+}
+.icon_link:hover {
+    color: var(--white);
 }
 .contact_logo {
     margin-top: 30px;
-    width: 60%;
+    width: 50%;
+}
+
+@media (min-width:900px) {
+    .contact_section {
+        flex-direction: row;
+    }
+    .wrapper {
+        order: 1;
+    }
+    .contact_header {
+        margin-top: 20px;
+    }
+    .contact_logo {
+        
+        max-width: 300px;
+    } 
 }

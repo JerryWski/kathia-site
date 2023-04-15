@@ -23,8 +23,11 @@ const ContactSection: React.FC = () => {
             <i className='fa-solid fa-mobile-screen-button fa-2x'></i>
           </a>
         </div>
-        <img className={styles.contact_logo} src={require('../images/stowidokow4-logo.png')}></img>
       </div>
+      <img
+        className={styles.contact_logo}
+        src={require('../images/stowidokow4-logo.png')}
+      ></img>
     </section>
   );
 };

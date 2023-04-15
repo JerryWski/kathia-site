@@ -46,7 +46,7 @@ const SectionBoxes: React.FC = () => {
           <p className={styles.text_section__bg}>Interior</p>
           <p className={styles.text_about}>
             Zapraszam Cię do świata, w którym pokażę Ci moją pasję oraz
-            doświadczenia związane z projektowaniem wnętrza naszego domu.
+            doświadczenia związane z urządzaniem wnętrza naszego domu.
           </p>
           <p className={styles.text_about}>
             Jeśli chcesz poznać mnie lepiej, koniecznie zajrzyj do sekcji
