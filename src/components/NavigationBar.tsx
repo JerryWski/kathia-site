@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HamburgerButton from './HamburgerButton';
 import styles from './NavigationBar.module.css';
 import { Link } from 'react-router-dom';
 
 interface NavigationBarProps {
-  toggleOverLay: () => void
-
+  toggleOverlay: () => void
 }
 
 interface NavItemsProps {
@@ -24,7 +23,7 @@ const NavItem: React.FC<NavItemsProps> = ({ to, label }) => {
   );
 };
 
-const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
+const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay }) => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleActive: () => void = () => {
@@ -35,7 +34,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
     <>
       <nav className={styles.nav_bar}>
         <div id='home' className={styles.logo_container}>
-          <Link to="/">
+          <Link to='/'>
             <img
               className={styles.logo_container__image}
               src={require('../images/logo-five.png')}
@@ -47,9 +46,9 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
           <NavItem to='/about-me' label='O mnie'/>
-          <NavItem to='/' label='Portfolio' />
-          <NavItem to='/' label='Działalność' />
-          <NavItem to='/' label='Kontakt' />
+          {/* <NavItem to='/' label='Portfolio'/>
+          <NavItem to='/' label='Działalność'/>
+          <NavItem to='/' label='Kontakt'/> */}
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
@@ -69,11 +68,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
         <HamburgerButton
           isActive={isActive}
           toggleActive={toggleActive}
-          toggleOverlay={toggleOverLay}
+          toggleOverlay={toggleOverlay}
         />
         <span className={styles.navbar_underline}></span>
       </nav>
-
     </>
   );
 };

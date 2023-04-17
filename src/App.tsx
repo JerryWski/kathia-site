@@ -7,12 +7,6 @@ import SectionBoxes from './components/SectionsBoxes';
 import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
 
-// const router = createBrowserRouter([
-//   {
-//     path: '/', element: <AboutMe />
-//   }
-// ]);
-
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
 
@@ -31,7 +25,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <header className={styles.header}>
-        <NavigationBar toggleOverLay={toggleOverlay} />
+        <NavigationBar toggleOverlay={toggleOverlay}/>
       </header>
       <main>
         <Routes>

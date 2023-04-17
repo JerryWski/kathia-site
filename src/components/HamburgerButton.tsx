@@ -7,13 +7,17 @@ interface BurgerMenuProps {
   toggleOverlay: () => void
 }
 
-const HamburgerButton: React.FC<BurgerMenuProps> = ({ isActive, toggleActive, toggleOverlay }) => {
+const HamburgerButton: React.FC<BurgerMenuProps> = ({
+  isActive,
+  toggleActive,
+  toggleOverlay
+}) => {
   return (
     <button
-    onClick={() => {
-      toggleActive();
-      toggleOverlay();
-    }}
+      onClick={() => {
+        toggleActive();
+        toggleOverlay();
+      }}
       className={`hamburger hamburger--collapse ${isActive ? 'is-active' : ''}`}
       type='button'
     >
