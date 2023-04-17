@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import HamburgerButton from './HamburgerButton';
 import styles from './NavigationBar.module.css';
 import { Link } from 'react-router-dom';
