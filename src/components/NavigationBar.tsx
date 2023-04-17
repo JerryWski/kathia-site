@@ -2,22 +2,23 @@
 import React, { useState } from 'react';
 import HamburgerButton from './HamburgerButton';
 import styles from './NavigationBar.module.css';
+import { Link } from 'react-router-dom';
 
 interface NavigationBarProps {
   toggleOverLay: () => void
 }
 
 interface NavItemsProps {
-  href: string
+  to: string
   label: string
 }
 
-const NavItem: React.FC<NavItemsProps> = ({ href, label }) => {
+const NavItem: React.FC<NavItemsProps> = ({ to, label }) => {
   return (
     <li className={styles.nav_bar__list_item}>
-      <a className={styles.links} href={href}>
+      <Link className={styles.links} to={to}>
         {label}
-      </a>
+      </Link>
     </li>
   );
 };
@@ -33,38 +34,33 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
     <>
       <nav className={styles.nav_bar}>
         <div id='home' className={styles.logo_container}>
-          <a href='#home'>
-            <img
-              className={styles.logo_container__image}
-              src={require('../images/logo-five.png')}
-              alt='logo'
-            />
-          </a>
+          <img
+            className={styles.logo_container__image}
+            src={require('../images/logo-five.png')}
+            alt='logo'
+          />
         </div>
         <ul
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
-          <NavItem href='/about-me' label='O mnie' />
-          <NavItem href='/about-me' label='Portfolio' />
-          <NavItem href='/about-me' label='Działalność' />
-          <NavItem href='/about-me' label='Kontakt' />
+          <NavItem to='/about-me' label='O mnie' />
+          {/* <NavItem href='/' label='Portfolio' />
+          <NavItem href='/' label='Działalność' />
+          <NavItem href='/' label='Kontakt' /> */}
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
-          <a
-            href='https://www.instagram.com/stowidokow.home/'
-            className={styles.icons}
-          >
-            <i className='fa-brands fa-instagram fa-2x'></i>
-          </a>
+            <a
+              href='https://www.instagram.com/stowidokow.home/'
+              className={styles.icons}
+            >
+              <i className='fa-brands fa-instagram fa-2x'></i>
+            </a>
           </li>
           <li className={styles.nav_bar__social_item}>
-          <a
-            href='mailto:stowidokow.home@gmail.com'
-            className={styles.icons}
-          >
-            <i className='fa-regular fa-envelope fa-2x'></i>
-          </a>
+            <a href='mailto:stowidokow.home@gmail.com' className={styles.icons}>
+              <i className='fa-regular fa-envelope fa-2x'></i>
+            </a>
           </li>
         </ul>
         <HamburgerButton

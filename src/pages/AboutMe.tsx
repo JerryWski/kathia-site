@@ -2,7 +2,7 @@ import styles from './AboutMe.module.css';
 
 const AboutMe: React.FC = () => {
   return (
-    <div>
+    <section id='about-me'>
       <div className={styles.about_wrapper}>
         <div className={styles.intro_container}>
           <p className={styles.intro_text}>
@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
         Quidem fuga, voluptas maiores nesciunt cupiditate est vitae quaerat
         deserunt dignissimos eveniet!
       </p>
-    </div>
+    </section>
   );
 };
 
