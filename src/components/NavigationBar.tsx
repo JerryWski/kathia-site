@@ -11,12 +11,13 @@ interface NavigationBarProps {
 interface NavItemsProps {
   to: string
   label: string
+  onClick?: () => void
 }
 
-const NavItem: React.FC<NavItemsProps> = ({ to, label }) => {
+const NavItem: React.FC<NavItemsProps> = ({ to, label, onClick }) => {
   return (
     <li className={styles.nav_bar__list_item}>
-      <Link className={styles.links} to={to}>
+      <Link className={styles.links} to={to} onClick={onClick}>
         {label}
       </Link>
     </li>
@@ -28,6 +29,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay }) => {
 
   const toggleActive: () => void = () => {
     setIsActive(!isActive);
+  };
+
+  const handleLinkClick: () => void = () => {
+    setIsActive(false); // usunięcie klasy active po kliknięciu w link
   };
 
   return (
@@ -45,10 +50,10 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay }) => {
         <ul
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
-          <NavItem to='/about-me' label='O mnie'/>
-          {/* <NavItem to='/' label='Portfolio'/>
+          <NavItem to='/about-me' label='O mnie'onClick={handleLinkClick} />
+          <NavItem to='/' label='Portfolio'/>
           <NavItem to='/' label='Działalność'/>
-          <NavItem to='/' label='Kontakt'/> */}
+          <NavItem to='/' label='Kontakt'/>
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
