@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import styles from './App.module.css';
 import WelcomeSection from './components/WelcomeSection';
@@ -38,11 +34,18 @@ const App: React.FC = () => {
         <NavigationBar toggleOverLay={toggleOverlay} />
       </header>
       <main>
-        <WelcomeSection />
-        <SectionBoxes />
-        <ContactSection />
         <Routes>
           <Route path='/about-me' element={<AboutMe />} />
+          <Route
+            path='/*'
+            element={
+              <>
+                <WelcomeSection />
+                <SectionBoxes />
+                <ContactSection />
+              </>
+            }
+          />
         </Routes>
       </main>
     </Router>

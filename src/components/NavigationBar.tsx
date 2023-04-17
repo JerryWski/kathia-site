@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 interface NavigationBarProps {
   toggleOverLay: () => void
+
 }
 
 interface NavItemsProps {
@@ -34,19 +35,21 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
     <>
       <nav className={styles.nav_bar}>
         <div id='home' className={styles.logo_container}>
-          <img
-            className={styles.logo_container__image}
-            src={require('../images/logo-five.png')}
-            alt='logo'
-          />
+          <Link to="/">
+            <img
+              className={styles.logo_container__image}
+              src={require('../images/logo-five.png')}
+              alt='logo'
+            />
+          </Link>
         </div>
         <ul
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
-          <NavItem to='/about-me' label='O mnie' />
-          {/* <NavItem href='/' label='Portfolio' />
-          <NavItem href='/' label='Działalność' />
-          <NavItem href='/' label='Kontakt' /> */}
+          <NavItem to='/about-me' label='O mnie'/>
+          <NavItem to='/' label='Portfolio' />
+          <NavItem to='/' label='Działalność' />
+          <NavItem to='/' label='Kontakt' />
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
@@ -70,6 +73,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
         />
         <span className={styles.navbar_underline}></span>
       </nav>
+
     </>
   );
 };
