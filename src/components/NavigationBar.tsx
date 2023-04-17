@@ -51,19 +51,20 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverLay }) => {
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
-            <a className={styles.icons} href=''>
-              I
-            </a>
+          <a
+            href='https://www.instagram.com/stowidokow.home/'
+            className={styles.icons}
+          >
+            <i className='fa-brands fa-instagram fa-2x'></i>
+          </a>
           </li>
           <li className={styles.nav_bar__social_item}>
-            <a className={styles.icons} href=''>
-              E
-            </a>
-          </li>
-          <li className={styles.nav_bar__social_item}>
-            <a className={styles.icons} href=''>
-              T
-            </a>
+          <a
+            href='mailto:stowidokow.home@gmail.com'
+            className={styles.icons}
+          >
+            <i className='fa-regular fa-envelope fa-2x'></i>
+          </a>
           </li>
         </ul>
         <HamburgerButton
