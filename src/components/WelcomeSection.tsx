@@ -37,6 +37,7 @@ const WelcomeSection: React.FC = () => {
             </picture>
           </div>
         </div>
+
         <p className={styles.welcome_text__bottom}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit Culpa
         </p>
