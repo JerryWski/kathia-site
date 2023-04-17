@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 interface NavigationBarProps {
   toggleOverlay: () => void
+  setIsOverlayActive: (isOverlayActive: boolean) => void
 }
 
 interface NavItemsProps {
@@ -24,7 +25,7 @@ const NavItem: React.FC<NavItemsProps> = ({ to, label, onClick }) => {
   );
 };
 
-const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay }) => {
+const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay, setIsOverlayActive }) => {
   const [isActive, setIsActive] = useState(false);
 
   const toggleActive: () => void = () => {
@@ -32,7 +33,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay }) => {
   };
 
   const handleLinkClick: () => void = () => {
-    setIsActive(false); // usunięcie klasy active po kliknięciu w link
+    setIsActive(false);
+    setIsOverlayActive(false); // usunięcie klasy active po kliknięciu w link
   };
 
   return (

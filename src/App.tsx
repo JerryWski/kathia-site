@@ -25,7 +25,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <header className={styles.header}>
-        <NavigationBar toggleOverlay={toggleOverlay}/>
+        <NavigationBar toggleOverlay={toggleOverlay} setIsOverlayActive={setIsOverlayActive}/>
       </header>
       <main>
         <Routes>
