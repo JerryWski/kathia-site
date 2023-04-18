@@ -2,7 +2,7 @@ import styles from './ContactSection.module.css';
 
 const ContactSection: React.FC = () => {
   return (
-    <section className={styles.contact_section}>
+    <section className={styles.contact_section} id='contacts'>
       <div className={styles.wrapper}>
         <h2 className={styles.contact_header}>Kontakt</h2>
         <p className={styles.contact_text}>Znajdź Mnie i napisz!</p>

@@ -6,6 +6,7 @@ import WelcomeSection from './components/WelcomeSection';
 import SectionBoxes from './components/SectionsBoxes';
 import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -30,6 +31,7 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route path='/about-me' element={<AboutMe />} />
+          <Route path='/portfolio' element={<Portfolio />} />
           <Route
             path='/*'
             element={

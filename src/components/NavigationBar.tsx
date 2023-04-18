@@ -53,9 +53,9 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay, setIsOverl
           className={`${styles.nav_bar__list} ${isActive ? styles.active : ''}`}
         >
           <NavItem to='/about-me' label='O mnie'onClick={handleLinkClick} />
-          <NavItem to='/' label='Portfolio'/>
+          <NavItem to='/portfolio' label='Portfolio'onClick={handleLinkClick} />
           <NavItem to='/' label='Działalność'/>
-          <NavItem to='/' label='Kontakt'/>
+          <NavItem to='/' label='Kontakt' onClick={handleLinkClick}/>
         </ul>
         <ul className={styles.nav_bar__social}>
           <li className={styles.nav_bar__social_item}>
