@@ -1,36 +1,43 @@
 .about_wrapper {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-content: start;
-    flex-wrap: wrap;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-content: start;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 .intro_container {
-    padding: 10px;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    color: var(--black);
-    margin-bottom: 30px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  margin-bottom: 30px;
+  text-align: center;
 }
 .intro_text {
-    font-family: var(--font);
-    font-size: 1.15rem;
-    text-align: left;
-    word-break: break-word;
-    font-style: italic;
-    letter-spacing: .1rem;
+  font-family: var(--font);
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  word-break: break-word;
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+  margin: 30px 0 30px 0;
+}
+.intro_text__about {
+  opacity: 0.8;
+  text-transform: none;
+  font-style: italic;
 }
 .intro_heading {
-    font-size: 5rem;
-    font-family: var(--font);
+  font-size: 5rem;
+  font-family: var(--font);
 }
-
 .image_container {
-    width: 350px;
-    padding: 10px; 
+  padding: 20px;
+  width: 400px;
+  height: auto;
 }
 .profile_image {
-    height: auto;
-    width: 100%;
+  width: 100%;
+  object-fit: contain;
 }
