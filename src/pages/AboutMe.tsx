@@ -5,22 +5,21 @@ const AboutMe: React.FC = () => {
     <section id='about-me'>
       <div className={styles.about_wrapper}>
         <div className={styles.intro_container}>
-          <p className={styles.intro_text}>
-            &apos; Teraz <span className={styles.intro_text__about}>Parę</span>{' '}
-            słów... &apos;
-          </p>
-          <h2 className={styles.intro_heading}>o Mnie</h2>
+          <h2 className={styles.intro_heading}>O Mnie</h2>
         </div>
         <div className={styles.image_container}>
           <img
             className={styles.profile_image}
-            src={require('../images/kathia.png')}
+            src={require('../images/kathia5.png')}
             alt='woman'
           ></img>
         </div>
+          {/* <span className={styles.test}>Śledź</span> */}
         <div className={styles.description_container}>
+          <p className={styles.bio_descritpion}>Cześć!</p>
           <p className={styles.bio_descritpion}>
-            Kasia. Prowadzi konto na Instagramie o nazwie @sto_widokow.home
+            Kasia. Prowadzi konto na Instagramie o nazwie{' '}
+            <a href=''>@sto_widokow.home</a>
             Miłośniczka kawy i przytulnych wnętrz. Choć w życiu zawodowym
             zajmowała się głównie rekrutacją, sprzedażą i szkoleniami, to pasja
             do wnętrz i fotografii sprawiła, że prowadzenie tego profilu sprawia
