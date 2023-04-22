@@ -1,9 +1,8 @@
 .about_wrapper {
   display: flex;
   justify-content: space-around;
-  align-content: start;
+  align-content: flex-start;
   flex-wrap: wrap;
-  /* padding: 10px; */
 }
 .intro_container {
   width: 100%;
