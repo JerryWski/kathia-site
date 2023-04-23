@@ -72,3 +72,35 @@
   font-style: italic;
   font-family: var(--font);
 }
+
+@media (min-width: 900px) {
+  .about_wrapper {
+    justify-content: center;
+    gap: 30px;
+  }
+  .image_container {
+    order: 1;
+  }
+  .intro_container {
+    padding-left: 50px;
+  }
+  .intro_heading {
+    width: fit-content;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .description_container {
+    max-width: 800px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bio_descritpion {
+    align-self: flex-start;
+    font-size: 1.2rem;
+  }
+  .bio_link {
+    font-size: 1.4rem;
+  }
+}
