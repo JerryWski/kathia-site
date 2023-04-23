@@ -34,7 +34,7 @@ const AboutMe: React.FC = () => {
           </p>
           <p className={styles.bio_descritpion}>
             Jej marzeniem od zawsze było napisać własną książkę, póki co wydała
-            e-booka i ma apetyt na więcej!
+            <a className={styles.bio_link} href=""> e-booka</a> i ma apetyt na więcej!
           </p>
         </div>
       </div>
