@@ -2,42 +2,43 @@
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
+
   flex-wrap: wrap;
+  background-color: var(--beige);
 }
 .intro_container {
   width: 100%;
   display: flex;
   color: var(--black);
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   margin-top: 0px;
   margin-bottom: 30px;
-  background-color: var(--beige);
+  background-color: var(--white);
 }
 .intro_heading {
   width: 100%;
-  border-left: 5px solid var(--white);
-  padding: 15px 20px 15px 20px;
+  border-left: 5px solid var(--black);
+  padding: 10px 20px 10px 20px;
   text-transform: uppercase;
   font-size: 2.8rem;
   font-weight: 500;
   font-family: var(--font);
 }
 .image_container {
-  margin: 50px 15px 30px 15px;
-  /* border-radius: 50%; */
-
-  max-width: 400px;
-  padding: 10px;
-  position: relative;
-  /* max-height: 700px; */
+  margin: 45px 15px 30px 15px;
+  max-width: 350px;
+  padding: 5px;
+  border-radius: 50%;
   overflow: hidden;
+  background: var(--insta-basic);
+  background: var(--insta-colors);
 }
 .profile_image {
-  /* border-radius: 50%; */
   display: block;
   width: 100%;
   object-fit: contain;
+  border-radius: 50%;
 }
 /* .test {
   display: block;
@@ -47,12 +48,24 @@
   text-align: center;
 } */
 .description_container {
+  max-width: 600px;
   padding: 10px;
-  margin: 0 auto;
+  margin-inline: 20px;
+  background-color: white;
+  color: var(--black);
 }
 .bio_descritpion {
   margin: 10px;
   font-family: var(--secondfont);
-  line-height: 20px;
+  line-height: 25px;
+  font-size: 1.1rem;
   word-break: break-word;
+}
+.bio_link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  font-family: var(--font);
 }

@@ -18,8 +18,8 @@ const AboutMe: React.FC = () => {
         <div className={styles.description_container}>
           <p className={styles.bio_descritpion}>Cześć!</p>
           <p className={styles.bio_descritpion}>
-            Kasia. Prowadzi konto na Instagramie o nazwie{' '}
-            <a href=''>@sto_widokow.home</a>
+            Kasia. Prowadzi konto na Instagramie o nazwie
+            <a className={styles.bio_link} href='https://www.instagram.com/stowidokow.home/'>@sto_widokow.home</a>.
             Miłośniczka kawy i przytulnych wnętrz. Choć w życiu zawodowym
             zajmowała się głównie rekrutacją, sprzedażą i szkoleniami, to pasja
             do wnętrz i fotografii sprawiła, że prowadzenie tego profilu sprawia

@@ -3,7 +3,6 @@ html {
   scroll-behavior: smooth;
   font-family: var(--secondfont);
   min-height: 100%;
-  
 }
 *,
 *::after,
@@ -20,6 +19,15 @@ html {
   --beige: hsl(28, 29%, 75%);
   --font: 'Old Standard TT', serif;
   --secondfont: 'Montserrat', sans-serif;
+  --insta-basic: #f09433;
+  --insta-colors: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   /* // font-family: 'Dancing Script', cursive;
   // font-family: 'Elsie', cursive;
   font-family: 'Old Standard TT', serif;
