@@ -26,16 +26,24 @@ const ContactSection: React.FC = () => {
       </div>
       <div className={styles.shortcuts}>
         <h3>Na skróty:</h3>
-        <a className={styles.shortcuts_links} href=''>O mnie</a>
-        <a className={styles.shortcuts_links} href=''>Portfolio</a>
-        <a className={styles.shortcuts_links} href=''>Działalność</a>
-        <a className={styles.shortcuts_links} href=''>Polityka prywatności</a>
+        <a className={styles.shortcuts_links} href=''>
+          O mnie
+        </a>
+        <a className={styles.shortcuts_links} href=''>
+          Portfolio
+        </a>
+        <a className={styles.shortcuts_links} href=''>
+          Działalność
+        </a>
+        <a className={styles.shortcuts_links} href=''>
+          Polityka prywatności
+        </a>
       </div>
-      <a className={styles.contact_logo__link} href="#home">
-          <img
-            className={styles.contact_logo}
-            src={require('../images/stowidokow4-logo.png')}
-          ></img>
+      <a className={styles.contact_logo__link} href='#home'>
+        <img
+          className={styles.contact_logo}
+          src={require('../images/stowidokow4-logo.png')}
+        ></img>
       </a>
     </section>
   );
