@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
               className={styles.bio_link}
               href='https://www.instagram.com/stowidokow.home/'
             >
-              @stowidokow.home
+            @stowidokow.home
             </a>
             . Miłośniczka kawy i przytulnych wnętrz. Choć w życiu zawodowym
             zajmowała się głównie rekrutacją, sprzedażą i szkoleniami, to pasja

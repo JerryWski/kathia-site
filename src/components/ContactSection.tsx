@@ -5,7 +5,7 @@ const ContactSection: React.FC = () => {
     <section className={styles.contact_section} id='contacts'>
       <div className={styles.wrapper}>
         <h2 className={styles.contact_header}>Kontakt</h2>
-        <p className={styles.contact_text}>Znajdź Mnie i napisz!</p>
+        <p className={styles.contact_text}>Znajdź mnie i napisz!</p>
         <div className={styles.social_icons}>
           <a
             href='https://www.instagram.com/stowidokow.home/'

@@ -14,7 +14,7 @@
   position: relative;
 }
 .welcome_header__container {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 1.8rem;
   color: var(--black);
 }
@@ -23,6 +23,7 @@
   text-align: center;
   font-style: italic;
   opacity: 0.8;
+  font-family: var(--font);
 }
 .welcome_text__bottom {
   padding-top: 40px;

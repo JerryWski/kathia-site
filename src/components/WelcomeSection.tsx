@@ -6,10 +6,11 @@ const WelcomeSection: React.FC = () => {
     <section>
       <div className={styles.welcome_section}>
         <div className={styles.welcome_header__container}>
-          {/* <p className={styles.welcome_text__top}>#interior, #home, #design</p> */}
+          <p className={styles.welcome_text__top}>wnętrza, dom, design</p>
           <h1 className={styles.welcome_header}>
-            Let&apos;s <span className={styles.header_italic}> Make</span> Your
-            Interior <span className={styles.header_italic}>Better</span>
+            {/* Let&apos;s <span className={styles.header_italic}> Make</span> Your
+            Interior <span className={styles.header_italic}>Better</span> */}
+            Marka Własna
           </h1>
         </div>
         <div className={styles.welcome_image__container}>
