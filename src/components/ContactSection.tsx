@@ -1,6 +1,16 @@
 import styles from './ContactSection.module.css';
+import { Link } from 'react-router-dom';
+import React, { useEffect, useState, useLayoutEffect } from 'react';
 
 const ContactSection: React.FC = () => {
+  const scrollToTop = (): void => {
+    const scrollStep = -window.scrollY / (100 / 55);
+    const scrollInterval = setInterval(() => {
+      window.scrollBy(0, scrollStep);
+      if (window.scrollY === 0) clearInterval(scrollInterval);
+    }, 15);
+  };
+
   return (
     <section className={styles.contact_section} id='contacts'>
       <div className={styles.wrapper}>
@@ -26,9 +36,13 @@ const ContactSection: React.FC = () => {
       </div>
       <div className={styles.shortcuts}>
         <h3>Na skróty:</h3>
-        <a className={styles.shortcuts_links} href=''>
+        <Link
+          className={styles.shortcuts_links}
+          to='/about-me'
+          onClick={scrollToTop}
+        >
           O mnie
-        </a>
+        </Link>
         <a className={styles.shortcuts_links} href=''>
           Portfolio
         </a>

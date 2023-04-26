@@ -11,7 +11,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  outline: none;
+}
 :root {
   --white: hsl(0, 0%, 100%);
   --black: #443c3c;

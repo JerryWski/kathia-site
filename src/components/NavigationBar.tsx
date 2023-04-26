@@ -67,12 +67,12 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay, setIsOverl
               href='https://www.instagram.com/stowidokow.home/'
               className={styles.icons}
             >
-              <i className='fa-brands fa-instagram fa-2x'></i>
+              <i className='fa-brands fa-instagram'></i>
             </a>
           </li>
           <li className={styles.nav_bar__social_item}>
             <a href='mailto:stowidokow.home@gmail.com' className={styles.icons}>
-              <i className='fa-regular fa-envelope fa-2x'></i>
+              <i className='fa-regular fa-envelope'></i>
             </a>
           </li>
         </ul>
