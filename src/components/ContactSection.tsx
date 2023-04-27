@@ -1,17 +1,9 @@
 import styles from './ContactSection.module.css';
 import { Link } from 'react-router-dom';
-import scrollToTop from '../utils/ScrollToTop'
+import scrollToTop from '../utils/ScrollToTop';
 import React from 'react';
 
 const ContactSection: React.FC = () => {
-  // const scrollToTop = (): void => {
-  //   const scrollStep = -window.scrollY / (100 / 55);
-  //   const scrollInterval = setInterval(() => {
-  //     window.scrollBy(0, scrollStep);
-  //     if (window.scrollY === 0) clearInterval(scrollInterval);
-  //   }, 15);
-  // };
-
   return (
     <section className={styles.contact_section} id='contacts'>
       <div className={styles.wrapper}>
