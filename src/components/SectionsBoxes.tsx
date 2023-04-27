@@ -1,4 +1,6 @@
 import styles from './SectionBoxes.module.css';
+import { Link } from 'react-router-dom';
+import scrollToTop from '../utils/ScrollToTop';
 
 const SectionBoxes: React.FC = () => {
   return (
@@ -16,9 +18,13 @@ const SectionBoxes: React.FC = () => {
               src={require('../images/coffie.png')}
               alt='kitchen-accessories'
             ></img>
-            <a className={styles.box_one__link} href=''>
+            <Link
+              className={styles.box_one__link}
+              to='/about-me'
+              onClick={scrollToTop}
+            >
               O Mnie
-            </a>
+            </Link>
           </div>
           <div className={styles.box_two}>
             <div className={styles.box_border}></div>
@@ -50,19 +56,29 @@ const SectionBoxes: React.FC = () => {
           </p>
           <p className={styles.text_about}>
             Jeśli chcesz poznać mnie lepiej, koniecznie zajrzyj do sekcji
-            <span className={styles.text_span}> O mnie</span>. Tam dowiesz się o
-            moich doświadczeniach związanych z projektowaniem wnętrz oraz miłości
-            do kawy.
+            <Link
+              to='/about-me'
+              className={styles.text_span}
+              onClick={scrollToTop}
+            >
+              O mnie
+            </Link>
+            . Tam dowiesz się o moich doświadczeniach związanych z
+            projektowaniem wnętrz oraz miłości do kawy.
           </p>
           <p className={styles.text_about}>
-            W dziale<span className={styles.text_span}> Portfolio</span>{' '}
-            prezentuję moje dotychczasowe projekty i realizacje, które z pewnością
-            Cię zainspirują.
+            W dziale
+            <Link to={'/portfolio'} className={styles.text_span}>
+              {' '}
+              Portfolio
+            </Link>
+            prezentuję moje dotychczasowe projekty i realizacje, które z
+            pewnością Cię zainspirują.
           </p>
           <p className={styles.text_about}>
             Jeśli interesuje Cię moja działalność oraz chcesz dowiedzieć się
             więcej o usługach, jakie oferuję, zajrzyj do sekcji
-            <span className={styles.text_span}> Działalność</span>. Tam znajdziesz
+            <a className={styles.text_span}> Działalność</a>. Tam znajdziesz
             szczegółowe informacje na temat mojej pracy i możliwości współpracy.
           </p>
         </div>
