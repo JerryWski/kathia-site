@@ -7,6 +7,7 @@ import SectionBoxes from './components/SectionsBoxes';
 import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -26,7 +27,10 @@ const App: React.FC = () => {
   return (
     <Router>
       <header className={styles.header}>
-        <NavigationBar toggleOverlay={toggleOverlay} setIsOverlayActive={setIsOverlayActive}/>
+        <NavigationBar
+          toggleOverlay={toggleOverlay}
+          setIsOverlayActive={setIsOverlayActive}
+        />
       </header>
       <main>
         <Routes>
@@ -44,6 +48,9 @@ const App: React.FC = () => {
           />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </Router>
   );
 };

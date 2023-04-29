@@ -108,6 +108,7 @@
     color: rgb(119, 87, 56);
     background: white;
     border-radius: 6px;
+    border-bottom: none;
   }
   .nav_bar__social {
     background-color: var(--white);
