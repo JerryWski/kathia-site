@@ -44,7 +44,7 @@ const SectionBoxes: React.FC = () => {
               src={require('../images/co-op.png')}
             ></img>
             <a className={styles.box_three__link} href=''>
-              Działalność
+              Statystyki
             </a>
           </div>
         </div>
@@ -78,7 +78,7 @@ const SectionBoxes: React.FC = () => {
           <p className={styles.text_about}>
             Jeśli interesuje Cię moja działalność oraz chcesz dowiedzieć się
             więcej o usługach, jakie oferuję, zajrzyj do sekcji
-            <a className={styles.text_span}> Działalność</a>. Tam znajdziesz
+            <a className={styles.text_span}> Statystyki</a>. Tam znajdziesz
             szczegółowe informacje na temat mojej pracy i możliwości współpracy.
           </p>
         </div>
