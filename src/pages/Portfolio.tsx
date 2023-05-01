@@ -19,8 +19,8 @@ const Portfolio: React.FC = () => {
                 <a href=''>
                   <div className={styles.portfolio_description}>
                     <h3 className={styles.portfolio_title}>{item.title}</h3>
-                    <p className={styles.portfolio_text}>Something about</p>
-                    <img src={item.image}></img>
+                    <p className={styles.portfolio_text}>{item.text}</p>
+                    <img className={styles.portfolio_image} src={item.image}></img>
                   </div>
                 </a>
               </li>

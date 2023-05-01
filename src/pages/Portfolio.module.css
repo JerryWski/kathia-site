@@ -36,6 +36,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    background-color: var(--white);
     list-style: none;
+}
+.portfolio_item {
+    border: 1px solid red;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+}
+.portfolio_image {
+    object-fit: contain;
+    width: 100%;
 }
