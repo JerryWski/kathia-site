@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <div className={styles.footer}>
       <p className={styles.footer_text}>created by Jerry_Wski</p>
-      <p className={styles.footer_year}>©{currentYear()}</p>
+      <p className={styles.footer_year}>© Copyright {currentYear()}</p>
     </div>
   );
 };
