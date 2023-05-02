@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
                   <div className={styles.portfolio_description}>
                     <h3 className={styles.portfolio_title}>{item.title}</h3>
                     <p className={styles.portfolio_text}>{item.text}</p>
-                    <img className={styles.portfolio_image} src={item.image}></img>
+                    <img className={styles.portfolio_image} src={item.image} alt='interior-photo'></img>
                   </div>
                 </a>
               </li>
