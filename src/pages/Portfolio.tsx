@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
           <ul className={styles.portfolio_lists}>
             {imageList.map((item) => (
               <li key={item.id} className={styles.portfolio_item}>
-                <a href=''>
+                <a className={styles.portfolio_links} href={item.link}>
                   <div className={styles.portfolio_description}>
                     <h3 className={styles.portfolio_title}>{item.title}</h3>
                     <p className={styles.portfolio_text}>{item.text}</p>
