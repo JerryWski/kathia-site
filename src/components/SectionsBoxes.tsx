@@ -61,7 +61,7 @@ const SectionBoxes: React.FC = () => {
               className={styles.text_span}
               onClick={scrollToTop}
             >
-              O mnie
+              {' '}O mnie
             </Link>
             . Tam dowiesz się o moich doświadczeniach związanych z
             projektowaniem wnętrz oraz miłości do kawy.
@@ -70,7 +70,7 @@ const SectionBoxes: React.FC = () => {
             W dziale
             <Link to={'/portfolio'} className={styles.text_span}>
               {' '}
-              Portfolio
+              Portfolio{' '}
             </Link>
             prezentuję moje dotychczasowe projekty i realizacje, które z
             pewnością Cię zainspirują.

@@ -16,7 +16,7 @@ a {
 }
 :root {
   --white: hsl(0, 0%, 100%);
-  --black: #443c3c;
+  --black: hsl(0, 6%, 25%);
   --bg-rose: hsl(274, 47%, 97%);
   --beige: hsl(28, 29%, 75%);
   --font: 'Old Standard TT', serif;

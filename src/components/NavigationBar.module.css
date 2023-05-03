@@ -114,13 +114,12 @@
     background-color: var(--white);
     display: flex;
     border-radius: 6px;
-    padding: 3px 42px 3px 28px;
+    padding: 3px 0px 3px 0px;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    max-width: 50px;
+    max-width: 94px;
   }
-  
   .icons {
     outline: none;
     text-decoration: none;
