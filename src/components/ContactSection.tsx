@@ -36,6 +36,7 @@ const ContactSection: React.FC = () => {
         >
           O mnie
         </Link>
+        {/* pozmieniac na linki */}
         <a className={styles.shortcuts_links} href=''>
           Portfolio
         </a>

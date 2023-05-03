@@ -28,7 +28,7 @@ const Portfolio: React.FC = () => {
                   href='https://www.instagram.com/tv/CUK_nPNDWEk/?igshid=YmMyMTA2M2Y%3D'
                 >
                   {' '}
-                  Rozmowa z Eweliną Wojciechowską
+                  Link do rozmowy
                 </a>
               </p>
             </p>
@@ -36,10 +36,11 @@ const Portfolio: React.FC = () => {
               Wyznacznikiem współpracy jest zawsze dla niej jakość, dlatego też
               podejmuje się reklamowania produktów, pod którymi podpisuje się
               obiema rękami. W realizację projektów z markami zawsze wkłada całe
-              serce i zaangażowanie, aby reklama była ciekawa. <span className={styles.intro_span}>
-                Oto kilka przykładowych publikacji:
-              </span>
+              serce i zaangażowanie, aby reklama była ciekawa.
             </p>
+            <span className={styles.intro_span}>
+              Oto kilka przykładowych publikacji:
+            </span>
           </div>
         </div>
         <div className={styles.portfolio_lists__container}>
