@@ -59,7 +59,7 @@
 .description_container {
   font-family: var(--secondfont);
   max-width: 600px;
-  padding: 25px;
+  padding: 40px;
   margin-inline: 20px;
   border-radius: 86px 20px 96px 20px;
   background-color: white;
