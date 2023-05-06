@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
         <div className={styles.image_container}>
           <img
             className={styles.profile_image}
-            src={require('../images/kathia5.png')}
+            src={require('../images/kathia2.png')}
             alt='woman'
           ></img>
         </div>
