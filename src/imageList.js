@@ -35,7 +35,7 @@ export const imageList = [
     link: 'https://shorturl.at/vFY59'
   },
   {
-    id: 5,
+    id: 6,
     image: require('./images/restilo.png'),
     title: 'Restilo',
     text: 'Nowoczesny sklep internetowy z artykułami do domu',

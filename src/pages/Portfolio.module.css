@@ -76,15 +76,13 @@ font-family: var(--font);
   box-shadow: 0px 39px 61px -18px rgba(68, 60, 60, 1);
 }
 .portfolio_description {
+  padding-top: 5px;
   transform: scale(1);
   transition: transform 0.3s linear;
   text-align: center;
 }
 .portfolio_description:hover {
   transform: scale(1.05);
-}
-.portfolio_description:hover .portfolio_image {
-  filter: brightness(100%);
 }
 .portfolio_links {
   text-decoration: none;
@@ -104,7 +102,6 @@ font-family: var(--font);
   padding: 10px 5px 10px 5px;
 }
 .portfolio_title {
-  padding-top: 18px;
   padding-bottom: 5px;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -122,5 +119,15 @@ font-family: var(--font);
 @media (min-width: 900px) {
   .portfolio_lists__container {
     width: 90vw;
+  }
+  .intro_description {
+    max-width: 1440px;
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  .intro_heading {
+    font-size: 5rem;
+    margin-left: 50px;
+    
   }
 }
