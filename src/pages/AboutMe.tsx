@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
         <div className={styles.image_container}>
           <img
             className={styles.profile_image}
-            src={require('../images/kathia2.png')}
+            src={require('../images/kathia3.png')}
             alt='woman'
           ></img>
         </div>
@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
         <div className={styles.description_container}>
           <p className={styles.bio_descritpion}>Cześć!</p>
           <p className={styles.bio_descritpion}>
-            Jestem Kasia. Prowadzę konto na Instagramie o nazwie
+            Jestem Kasia. Prowadzę konto na Instagramie o nazwie{' '}
             <a
               className={styles.bio_link}
               href='https://www.instagram.com/stowidokow.home/'
