@@ -33,9 +33,13 @@ const SectionBoxes: React.FC = () => {
               src={require('../images/coffie.png')}
               alt='kitchen-accessories'
             ></img>
-            <a className={styles.box_two__link} href=''>
+            <Link
+              className={styles.box_two__link}
+              to='/portfolio'
+              onClick={scrollToTop}
+            >
               Portfolio
-            </a>
+            </Link>
           </div>
           <div className={styles.box_three}>
             <div className={styles.box_border}></div>
@@ -61,14 +65,19 @@ const SectionBoxes: React.FC = () => {
               className={styles.text_span}
               onClick={scrollToTop}
             >
-              {' '}O mnie
+              {' '}
+              O mnie
             </Link>
             . Tam dowiesz się o moich doświadczeniach związanych z
             projektowaniem wnętrz oraz miłości do kawy.
           </p>
           <p className={styles.text_about}>
             W dziale
-            <Link to={'/portfolio'} className={styles.text_span}>
+            <Link
+              to='/portfolio'
+              className={styles.text_span}
+              onClick={scrollToTop}
+            >
               {' '}
               Portfolio{' '}
             </Link>

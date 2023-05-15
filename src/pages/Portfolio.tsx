@@ -19,18 +19,18 @@ const Portfolio: React.FC = () => {
                 e-booku pt. „Jak rozwinąć konto wnętrzarskie . 10 kroków do
                 sukcesu”.{' '}
               </span>
-              <p className={styles.intro_text}>
-                O tym, czym dla niej jest Instagram, jak zbudować zaangażowaną
-                społeczność i jak działa algorytm opowiedziała psycholog
-                Ewelinie Wojciechowskiej w wywiadzie live:{' '}
-                <a
-                  className={styles.intro_link}
-                  href='https://www.instagram.com/tv/CUK_nPNDWEk/?igshid=YmMyMTA2M2Y%3D'
-                >
-                  {' '}
-                  Link do rozmowy
-                </a>
-              </p>
+            </p>
+            <p className={styles.intro_text}>
+              O tym, czym dla niej jest Instagram, jak zbudować zaangażowaną
+              społeczność i jak działa algorytm opowiedziała psycholog Ewelinie
+              Wojciechowskiej w wywiadzie live:{' '}
+              <a
+                className={styles.intro_link}
+                href='https://www.instagram.com/tv/CUK_nPNDWEk/?igshid=YmMyMTA2M2Y%3D'
+              >
+                {' '}
+                Link do rozmowy
+              </a>
             </p>
             <p className={styles.intro_text}>
               Wyznacznikiem współpracy jest zawsze dla niej jakość, dlatego też
