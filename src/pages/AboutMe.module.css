@@ -5,11 +5,6 @@
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
-  /* background-image: linear-gradient(
-    90deg,
-    rgba(210, 190, 173, 1) 50%,
-    rgba(255, 255, 255, 1) 41%
-  ); */
   flex-wrap: wrap;
   background-color: var(--beige);
 }
@@ -37,7 +32,7 @@
 .image_container {
   margin: 45px 20px 75px 20px;
   max-width: 350px;
-  /* max-height: 371px; */
+  background-color: var(--white);
   padding: 5px;
   border-radius: 50%;
   overflow: hidden;
@@ -49,13 +44,6 @@
   object-fit: contain;
   border-radius: 50%;
 }
-/* .test {
-  display: block;
-  bottom: -3%;
-  height: 30px;
-  width: 100px;
-  text-align: center;
-} */
 .description_container {
   font-family: var(--secondfont);
   max-width: 600px;
