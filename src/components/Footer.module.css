@@ -4,7 +4,18 @@
     align-items: center;
     gap: 5px;
     color: var(--beige);
-    border-top: 1px solid var(--beige);
     background-color: var(--black);
-    padding: 12px 0 12px 0;
+    padding: 22px 0 12px 0;
+    position: relative;
 }
+.footer_overline {
+    margin: 0 auto;
+    margin-top: 5px;
+    border-top: 1px solid var(--beige);
+    width: 76%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .9;
+  }

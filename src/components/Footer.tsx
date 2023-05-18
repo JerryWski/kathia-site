@@ -6,10 +6,13 @@ const Footer: React.FC = () => {
   };
 
   return (
+    <>
     <div className={styles.footer}>
+    <span className={styles.footer_overline}></span>
       <p className={styles.footer_text}>created by Jerry_Wski</p>
       <p className={styles.footer_year}>© Copyright {currentYear()}</p>
     </div>
+    </>
   );
 };
 
