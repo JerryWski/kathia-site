@@ -8,7 +8,7 @@ import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
-import InstaStats from './pages/InstaStats';
+import InstaStats from './pages/InstaData';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);

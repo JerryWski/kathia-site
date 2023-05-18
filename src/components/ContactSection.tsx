@@ -44,9 +44,13 @@ const ContactSection: React.FC = () => {
         >
           Portfolio
         </Link>
-        <a className={styles.shortcuts_links} href=''>
+        <Link
+          className={styles.shortcuts_links}
+          to='/insta-stats'
+          onClick={scrollToTop}
+        >
           Statystyki
-        </a>
+        </Link>
         <a className={styles.shortcuts_links} href=''>
           Polityka prywatności
         </a>
