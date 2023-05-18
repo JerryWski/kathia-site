@@ -54,7 +54,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay, setIsOverl
         >
           <NavItem to='/about-me' label='O mnie'onClick={handleLinkClick} />
           <NavItem to='/portfolio' label='Portfolio'onClick={handleLinkClick} />
-          <NavItem to='/' label='Statystyki'/>
+          <NavItem to='/insta-stats' label='Statystyki'onClick={handleLinkClick}/>
           <li className={styles.nav_bar__list_item}>
       <a className={styles.links} href='#contacts' onClick={handleLinkClick}>
         Kontakt

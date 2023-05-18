@@ -8,6 +8,7 @@ import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
+import InstaStats from './pages/InstaStats';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path='/about-me' element={<AboutMe />} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/insta-stats' element={<InstaStats />} />
           <Route
             path='/*'
             element={

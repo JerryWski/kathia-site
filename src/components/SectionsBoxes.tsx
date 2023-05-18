@@ -47,9 +47,13 @@ const SectionBoxes: React.FC = () => {
               className={styles.box_image}
               src={require('../images/co-op.png')}
             ></img>
-            <a className={styles.box_three__link} href=''>
+            <Link
+              className={styles.box_three__link}
+              to='/insta-stats'
+              onClick={scrollToTop}
+            >
               Statystyki
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.text_section}>
@@ -87,8 +91,16 @@ const SectionBoxes: React.FC = () => {
           <p className={styles.text_about}>
             Jeśli interesuje Cię moja działalność oraz chcesz dowiedzieć się
             więcej o usługach, jakie oferuję, zajrzyj do sekcji
-            <a className={styles.text_span}> Statystyki</a>. Tam znajdziesz
-            szczegółowe informacje na temat mojej pracy i możliwości współpracy.
+            <Link
+              className={styles.text_span}
+              to='/insta-stats'
+              onClick={scrollToTop}
+            >
+              {' '}
+              Statystyki
+            </Link>
+            . Tam znajdziesz szczegółowe informacje na temat mojej pracy i
+            możliwości współpracy.
           </p>
         </div>
       </div>
