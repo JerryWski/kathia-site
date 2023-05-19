@@ -29,7 +29,7 @@ const InstaStats: React.FC = () => {
       <div className={styles.data_wrapper}>
         <img
           className={styles.logo}
-          src={require('../images/stowidokow_home.png')}
+          src={require('../images/stowidokow_home2.png')}
           alt='logo'
         />
         <p className={styles.brand_text}>Marka Własna</p>
@@ -37,7 +37,7 @@ const InstaStats: React.FC = () => {
           <p className={styles.description}>
             Zapraszam do zapoznania się ze statystykami na moim Instagramie
             <span className={styles.description_span__first}>
-               (ponad 115 tys. obserwujących).
+              {' '}(ponad 115 tys. obserwujących).
             </span>
           </p>
           <p className={styles.description}>
@@ -49,9 +49,8 @@ const InstaStats: React.FC = () => {
           <p className={styles.description}>
             Jeśli jesteś zainteresowany/a reklamą lub współpracą na moich
             kanałach SM, daj znać poprzez{' '}
-            <a className={styles.description_span} href='#contacts'>
-              Kontakt
-            </a>
+            <span className={styles.description_span}>email
+            </span>
             .
           </p>
         </div>
