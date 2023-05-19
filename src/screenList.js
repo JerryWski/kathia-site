@@ -12,11 +12,11 @@ export const screenList = [
   {
     id: 3,
     image: require('./images/age_diagram.png'),
-    title: 'Zasięgi rolek'
+    title: ''
   },
   {
     id: 4,
-    image: require('./images/range_reels.png'),
-    title: 'Zasięgi rolek'
+    image: require('./images/gender_diagram.png'),
+    title: ''
   }
 ];

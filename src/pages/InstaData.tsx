@@ -13,7 +13,11 @@ const InstaStats: React.FC = () => {
     return (
       <div className={styles.screen_block} key={item.id}>
         <h3 className={styles.screen_title}>{item.title}</h3>
-        <img className={styles.screen_image} src={item.image} alt='instagram-screenshot' />
+        <img
+          className={styles.screen_image}
+          src={item.image}
+          alt='instagram-screenshot'
+        />
       </div>
     );
   });
@@ -28,24 +32,30 @@ const InstaStats: React.FC = () => {
           src={require('../images/stowidokow_home.png')}
           alt='logo'
         />
+        <p className={styles.brand_text}>Marka Własna</p>
         <div className={styles.description_container}>
           <p className={styles.description}>
-            Zapraszam do zapoznania się ze statystykami na moim Instagramie(ponad
-            115 tys. obserwujących).
+            Zapraszam do zapoznania się ze statystykami na moim Instagramie
+            <span className={styles.description_span__first}>
+               (ponad 115 tys. obserwujących).
+            </span>
           </p>
-          <p className={styles.description}>Znajdziesz tutaj kilka ciekawych informacji
-            dotyczący zasięgów zdjęć i rolek. Dowiesz się również, jakie posty
-            przyciągają największą uwagę i jakie treści generują najwięcej
-            zaangażowania, a także jakie grupy odbiorców najchętniej odwiedzają
-            moje konto.</p>
           <p className={styles.description}>
-            Jeśli jesteś zainteresowany/a reklamą lub współpracą na moich kanałach
-            SM, daj znać poprzez <a className={styles.description_span} href='#contacts'>Kontakt</a>
+            Znajdziesz tutaj kilka ciekawych informacji dotyczący zasięgów zdjęć
+            i rolek. Dowiesz się również, jakie posty przyciągają największą
+            uwagę i jakie treści generują najwięcej zaangażowania, a także jakie
+            grupy odbiorców najchętniej odwiedzają moje konto.
+          </p>
+          <p className={styles.description}>
+            Jeśli jesteś zainteresowany/a reklamą lub współpracą na moich
+            kanałach SM, daj znać poprzez{' '}
+            <a className={styles.description_span} href='#contacts'>
+              Kontakt
+            </a>
+            .
           </p>
         </div>
-        <div className={styles.screens_container}>
-          {screenItems}
-        </div>
+        <div className={styles.screens_container}>{screenItems}</div>
       </div>
       <ContactSection />
     </section>
