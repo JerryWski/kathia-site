@@ -8,8 +8,6 @@ const WelcomeSection: React.FC = () => {
         <div className={styles.welcome_header__container}>
           <p className={styles.welcome_text__top}>wnętrza, dom, design</p>
           <h1 className={styles.welcome_header}>
-            {/* Let&apos;s <span className={styles.header_italic}> Make</span> Your
-            Interior <span className={styles.header_italic}>Better</span> */}
             Marka Własna
           </h1>
         </div>
@@ -42,7 +40,7 @@ const WelcomeSection: React.FC = () => {
         <p className={styles.welcome_text__bottom}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit Culpa
         </p>
-        <a className={styles.link_arrow} href=''>
+        <a className={styles.link_arrow} href='#home'aria-label='arrow link to scroll down'>
           <i className='fa-solid fa-chevron-down fa-2x'></i>
         </a>
       </div>

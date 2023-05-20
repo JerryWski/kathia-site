@@ -3,7 +3,7 @@ const scrollToTop = (): void => {
   const scrollInterval = setInterval(() => {
     window.scrollBy(0, scrollStep);
     if (window.scrollY === 0) clearInterval(scrollInterval);
-  }, 15);
+  }, 100);
 };
 
 export default scrollToTop;

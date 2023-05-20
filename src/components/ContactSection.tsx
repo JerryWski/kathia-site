@@ -13,16 +13,22 @@ const ContactSection: React.FC = () => {
           <a
             href='https://www.instagram.com/stowidokow.home/'
             className={styles.icon_link}
+            aria-label='Link to Instagram'
           >
             <i className='fa-brands fa-instagram fa-2x'></i>
           </a>
           <a
             href='mailto:stowidokow.home@gmail.com'
             className={styles.icon_link}
+            aria-label='Link to mail'
           >
             <i className='fa-regular fa-envelope fa-2x'></i>
           </a>
-          <a href='tel:+48531767911' className={styles.icon_link}>
+          <a
+            href='tel:+48531767911'
+            className={styles.icon_link}
+            aria-label='Link to phone'
+          >
             <i className='fa-solid fa-mobile-screen-button fa-2x'></i>
           </a>
         </div>
@@ -36,7 +42,6 @@ const ContactSection: React.FC = () => {
         >
           O mnie
         </Link>
-        {/* pozmieniac na linki */}
         <Link
           className={styles.shortcuts_links}
           to='/portfolio'
@@ -51,7 +56,7 @@ const ContactSection: React.FC = () => {
         >
           Statystyki
         </Link>
-        <a className={styles.shortcuts_links} href=''>
+        <a className={styles.shortcuts_links} href='#home' aria-label='Link to policy'>
           Polityka prywatności
         </a>
       </div>
@@ -59,6 +64,7 @@ const ContactSection: React.FC = () => {
         <img
           className={styles.contact_logo}
           src={require('../images/stowidokow4-logo.png')}
+          alt='logo-image'
         ></img>
       </a>
     </section>

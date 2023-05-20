@@ -37,21 +37,21 @@ const InstaStats: React.FC = () => {
           <p className={styles.description}>
             Zapraszam do zapoznania się ze statystykami na moim Instagramie
             <span className={styles.description_span__first}>
-              {' '}(ponad 115 tys. obserwujących).
+              {' '}
+              (ponad 115 tys. obserwujących).
             </span>
           </p>
           <p className={styles.description}>
             Znajdziesz tutaj kilka ciekawych informacji dotyczący zasięgów zdjęć
-            i rolek. Dowiesz się również, jakie posty przyciągają największą
-            uwagę i jakie treści generują najwięcej zaangażowania, a także jakie
-            grupy odbiorców najchętniej odwiedzają moje konto.
+            i rolek. Dowiesz się również, do ilu odbiorców docierają treści
+            umieszczane na moim Instagramie i w jakie dni występuję największa
+            aktywności, a także jakie grupy odbiorców najchętniej odwiedzają
+            moje konto.
           </p>
           <p className={styles.description}>
             Jeśli jesteś zainteresowany/a reklamą lub współpracą na moich
             kanałach SM, daj znać poprzez{' '}
-            <span className={styles.description_span}>email
-            </span>
-            .
+            <span className={styles.description_span}>email</span>.
           </p>
         </div>
         <div className={styles.screens_container}>{screenItems}</div>

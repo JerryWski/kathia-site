@@ -46,6 +46,7 @@ const SectionBoxes: React.FC = () => {
             <img
               className={styles.box_image}
               src={require('../images/co-op.png')}
+              alt='kitchen-room'
             ></img>
             <Link
               className={styles.box_three__link}
