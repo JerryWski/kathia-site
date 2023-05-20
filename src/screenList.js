@@ -1,7 +1,7 @@
 export const screenList = [
   {
     id: 1,
-    image: require('./images/range_photos.png'),
+    image: require('./images/range_photos.webp'),
     title: 'Zasięgi zdjęć'
   },
   {
