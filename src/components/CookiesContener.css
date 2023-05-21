@@ -1,0 +1,19 @@
+.cookies_container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    border: 1px solid red;
+    width: 100%;
+    background-color: var(--white);
+}
+.cookies_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.active {
+    bottom: 0%;
+}

@@ -1,15 +1,41 @@
-import styles from './CookiesContener.module.css';
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+import './CookiesContener.css';
+import React, { useEffect, useState } from 'react';
 
 const CookiesContener: React.FC = () => {
-  return <div className={styles.cookies_container}>
-    <div style={styles.cookies_wrapper}>
-        <div style={styles.cookies}>
-            <h3 style={styles.cookies_heading}>Nagłówek cookies</h3>
-            <p style={styles.cookies_text}>Teskt o cookies</p>
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    if (!localStorage.getItem('cookiesBannerDisplayed')) {
+      const timer = setTimeout(() => {
+        setIsActive(true);
+      }, 2000);
+      return () => { clearTimeout(timer) };
+    }
+  }, []);
+
+  const handleAcceptClick: () => void = () => {
+    setIsActive(false);
+    localStorage.setItem('cookiesBannerDisplayed', 'true');
+  };
+
+  return (
+    <div className={`cookies_container ${isActive ? 'active' : ''}`}>
+      <div className='cookies_wrapper'>
+        <div className='cookies'>
+          <h3 className='cookies_heading'>Nagłówek cookies</h3>
+          <p className='cookies_text'>Teskt o cookies</p>
         </div>
-        <button role='button' style={styles.cookies_button}>Ackceptuję</button>
+        <button
+          role='button'
+          onClick={handleAcceptClick}
+          className='cookies_button'
+        >
+          Akceptuję
+        </button>
+      </div>
     </div>
-    </div>;
+  );
 };
 
 export default CookiesContener;

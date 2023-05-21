@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hamburger.Button.css';
+import './HamburgerButton.css';
 
 interface BurgerMenuProps {
   isActive: boolean

@@ -1,4 +1,4 @@
-import CookiesContener from './CookiesContener';
+
 import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
@@ -13,7 +13,6 @@ const Footer: React.FC = () => {
       <p className={styles.footer_text}>created by Jerry_Wski</p>
       <p className={styles.footer_year}>© Copyright {currentYear()}</p>
     </div>
-    <CookiesContener />
     </>
   );
 };
