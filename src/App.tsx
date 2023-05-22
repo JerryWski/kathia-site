@@ -8,8 +8,9 @@ import ContactSection from './components/ContactSection';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
-import InstaStats from './pages/InstaData';
+import InstaData from './pages/InstaData';
 import CookiesContener from './components/CookiesContener';
+import PrivatePolicty from './components/PrivatePolicy';
 // import ScrollToTop from './utils/ScrollToTop';
 
 const App: React.FC = () => {
@@ -41,7 +42,8 @@ const App: React.FC = () => {
           <Routes>
             <Route path='/about-me' element={<AboutMe />} />
             <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/insta-stats' element={<InstaStats />} />
+            <Route path='/insta-stats' element={<InstaData />} />
+            <Route path='/private-policy' element={<PrivatePolicty />} />
             <Route
               path='/*'
               element={
