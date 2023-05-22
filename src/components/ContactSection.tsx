@@ -56,9 +56,9 @@ const ContactSection: React.FC = () => {
         >
           Statystyki
         </Link>
-        <a className={styles.shortcuts_links} href='#home' aria-label='Link to policy'>
+        <Link className={styles.shortcuts_links} to='/private-policy' aria-label='Link to policy'>
           Polityka prywatności
-        </a>
+        </Link>
       </div>
       <a className={styles.contact_logo__link} href='#home'>
         <img

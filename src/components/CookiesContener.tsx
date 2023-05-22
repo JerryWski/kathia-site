@@ -2,6 +2,7 @@
 import './CookiesContener.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import scrollToTop from '../utils/ScrollToTop';
 
 const CookiesContener: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -23,27 +24,36 @@ const CookiesContener: React.FC = () => {
   };
 
   return (
-    <div className={`cookies_container ${isActive ? 'active' : ''}`}>
-      <div className='cookies_wrapper'>
-        <div className='cookies'>
-          <h3 className='cookies_heading'>
-            Korzystamy z ciasteczek cookies, aby świadczyć usługi na najwyższym
-            poziomie
-          </h3>
-          <p className='cookies_text'>
-            Klikając &apos;Akceptuję&apos; wyrażasz zgodę na wykorzystywanie
-            przez nas plików cookies. Przeczytaj naszą <Link to='/private-policy'>Polityka Prywatności</Link>
-          </p>
+    <section>
+      <div className={`cookies_container ${isActive ? 'active' : ''}`}>
+        <div className='cookies_wrapper'>
+          <div className='cookies'>
+            <h3 className='cookies_heading'>
+              Korzystamy z ciasteczek cookies, aby świadczyć usługi na najwyższym
+              poziomie
+            </h3>
+            <p className='cookies_text'>
+              Klikając &apos;Akceptuję&apos; wyrażasz zgodę na wykorzystywanie
+              przez nas plików cookies. Przeczytaj naszą{' '}
+              <Link
+                onClick={scrollToTop}
+                className='cookies_link'
+                to='/private-policy'
+              >
+                Polityka Prywatności
+              </Link>.
+            </p>
+          </div>
+          <button
+            role='button'
+            onClick={handleAcceptClick}
+            className='cookies_button'
+          >
+            Akceptuję
+          </button>
         </div>
-        <button
-          role='button'
-          onClick={handleAcceptClick}
-          className='cookies_button'
-        >
-          Akceptuję
-        </button>
       </div>
-    </div>
+    </section>
   );
 };
 
