@@ -10,7 +10,7 @@ import Portfolio from './pages/Portfolio';
 import Footer from './components/Footer';
 import InstaStats from './pages/InstaData';
 import CookiesContener from './components/CookiesContener';
-import ScrollToTop from './utils/ScrollToTop';
+// import ScrollToTop from './utils/ScrollToTop';
 
 const App: React.FC = () => {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -37,7 +37,7 @@ const App: React.FC = () => {
           />
         </header>
         <main>
-          <ScrollToTop>
+          {/* <ScrollToTop> */}
           <Routes>
             <Route path='/about-me' element={<AboutMe />} />
             <Route path='/portfolio' element={<Portfolio />} />
@@ -53,7 +53,7 @@ const App: React.FC = () => {
               }
             />
           </Routes>
-          </ScrollToTop>
+          {/* </ScrollToTop> */}
         </main>
         <footer>
           <Footer />

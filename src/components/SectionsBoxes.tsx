@@ -68,7 +68,7 @@ const SectionBoxes: React.FC = () => {
             <Link
               to='/about-me'
               className={styles.text_span}
-              onClick={scrollToTop}
+              // onClick={scrollToTop}
             >
               {' '}
               O mnie
@@ -81,7 +81,7 @@ const SectionBoxes: React.FC = () => {
             <Link
               to='/portfolio'
               className={styles.text_span}
-              onClick={scrollToTop}
+              // onClick={scrollToTop}
             >
               {' '}
               Portfolio{' '}
