@@ -14,7 +14,11 @@
 // export default ScrollToTop;
 
 const scrollToTop = (): void => {
-  const element = document.documentElement || document.body;
-  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const intervalId = setInterval(() => {
+    const element = document.documentElement || document.body;
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    clearInterval(intervalId);
+  }, 10);
 };
-export default scrollToTop
+
+export default scrollToTop;
