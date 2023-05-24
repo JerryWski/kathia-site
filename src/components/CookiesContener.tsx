@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import scrollToTop from '../utils/ScrollToTop';
 
 const CookiesContener: React.FC = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   useEffect(() => {
     if (!localStorage.getItem('cookiesBannerDisplayed')) {
@@ -21,6 +21,9 @@ const CookiesContener: React.FC = () => {
   const handleAcceptClick: () => void = () => {
     setIsActive(false);
     localStorage.setItem('cookiesBannerDisplayed', 'true');
+  };
+  const handleRefuseClick: () => void = () => {
+    setIsActive(false);
   };
 
   return (
@@ -44,13 +47,22 @@ const CookiesContener: React.FC = () => {
               </Link>.
             </p>
           </div>
-          <button
-            role='button'
-            onClick={handleAcceptClick}
-            className='cookies_button'
-          >
-            Akceptuję
-          </button>
+          <div className='button-container'>
+            <button
+              role='button'
+              onClick={handleAcceptClick}
+              className='cookies_button'
+            >
+              Akceptuję
+            </button>
+            <button
+              role='button'
+              onClick={handleRefuseClick}
+              className='cookies_button'
+            >
+              Nie, dziękuję
+            </button>
+          </div>
         </div>
       </div>
     </section>

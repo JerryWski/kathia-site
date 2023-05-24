@@ -38,6 +38,10 @@
 .cookies_link:hover {
     color: var(--white);
 }
+.button-container {
+    display: flex;
+    gap: 20px;
+}
 .cookies_button {
     padding: 10px 20px 10px 20px;
     max-width: 350px;
@@ -46,7 +50,7 @@
     border: 1px solid var(--black);
     cursor: pointer;
     background: var(--white);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: .3s all linear;
 }
 .cookies_button:hover {
@@ -67,6 +71,6 @@
     }
     .cookies_button {
         padding: 10px 30px 10px 30px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
