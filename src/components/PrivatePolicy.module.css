@@ -34,11 +34,19 @@
 
   @media (min-width:900px) {
     .section_container {
+      
+      margin: 0 auto;
+    }
+    .intro_container {
       max-width: 70%;
       margin: 0 auto;
     }
     .intro_heading {
       font-size: 5rem;
+    }
+    .policy_wrapper {
+      max-width: 70%;
+      margin: 0 auto;
     }
     .policy_header {
       font-size: 1.3rem;
