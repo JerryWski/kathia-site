@@ -35,13 +35,25 @@ const PrivatePolicty: React.FC = () => {
               odniesieniu do danych podanych dobrowolnie w Serwisie.{' '}
             </li>
             <li>
-              Serwis nie wykorzystuje danych osobowych, a tym samym nie zajmuje
-              się ich zbieraniem.
+              Serwis wykorzystuje dane osobowe w następujących celach:
+              <ul>
+                <li>Obsługa zapytań przez formularz</li>
+                <li>Prezentacja oferty lub informacji</li>
+              </ul>
             </li>
             <li>
               Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i
-              ich zachowaniu w następujący sposób: Poprzez zapisywanie w
-              urządzeniach końcowych plików cookie (tzw. „ciasteczka”).
+              ich zachowaniu w następujący sposób:{' '}
+              <ul>
+                <li>
+                  Poprzez zapisywanie w urządzeniach końcowych plików cookie
+                  (tzw. „ciasteczka”).
+                </li>
+                <li>
+                  Poprzez dobrowolnie wprowadzone w formularzach dane, które
+                  zostają wprowadzone do systemów Operatora.
+                </li>
+              </ul>
             </li>
           </ol>
 
@@ -61,7 +73,7 @@ const PrivatePolicty: React.FC = () => {
           <ol>
             <li>
               Serwis jest hostowany (technicznie utrzymywany) na serwera
-              operatora: ovh.com
+              operatora: netlify.com
             </li>
           </ol>
 
@@ -177,7 +189,7 @@ const PrivatePolicty: React.FC = () => {
               wynikające z plików cookies przy pomocy narzędzia:
               https://www.google.com/ads/preferences/
             </li>
-            <li>
+            {/* <li>
               Operator stosuje techniki remarketingowe, pozwalające na
               dopasowanie przekazów reklamowych do zachowania użytkownika na
               stronie, co może dawać złudzenie, że dane osobowe użytkownika są
@@ -185,30 +197,21 @@ const PrivatePolicty: React.FC = () => {
               do przekazania żadnych danych osobowych od Operatora do operatorom
               reklam. Technologicznym warunkiem takich działań jest włączona
               obsługa plików cookie.
-            </li>
-            <li>
-              Operator stosuje korzysta z piksela Facebooka. Ta technologia
-              powoduje, że serwis Facebook (Facebook Inc. z siedzibą w USA) wie,
-              że dana osoba w nim zarejestrowana korzysta z Serwisu. Bazuje w
-              tym wypadku na danych, wobec których sam jest administratorem,
-              Operator nie przekazuje od siebie żadnych dodatkowych danych
-              osobowych serwisowi Facebook. Usługa bazuje na wykorzystaniu
-              ciasteczek w urządzeniu końcowym użytkownika.
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               Operator stosuje rozwiązanie badające zachowanie użytkowników
               poprzez tworzenie map ciepła oraz nagrywanie zachowania na
               stronie. Te informacje są anonimizowane zanim zostaną przesłane do
               operatora usługi tak, że nie wie on jakiej osoby fizycznej one
               dotyczą. W szczególności nagrywaniu nie podlegają wpisywane hasła
               oraz inne dane osobowe.
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               Operator stosuje rozwiązanie automatyzujące działanie Serwisu w
               odniesieniu do użytkowników, np. mogące przesłać maila do
               użytkownika po odwiedzeniu konkretnej podstrony, o ile wyraził on
               zgodę na otrzymywanie korespondencji handlowej od Operatora.
-            </li>
+            </li> */}
             <li>
               Operator może stosować profilowanie w rozumieniu przepisów o
               ochronie danych osobowych 8. Informacja o plikach cookies
@@ -235,9 +238,9 @@ const PrivatePolicty: React.FC = () => {
               Pliki cookies wykorzystywane są w następujących celach:{' '}
               <ul>
                 <li>
-                  utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki
-                  której użytkownik nie musi na każdej podstronie Serwisu
-                  ponownie wpisywać loginu i hasła;
+                  utrzymanie sesji użytkownika Serwisu (po zalogowaniu, jeśli
+                  taka opcja jest dostępna), dzięki której użytkownik nie musi
+                  na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;
                 </li>
                 <li>
                   realizacji celów określonych powyżej w części „Istotne
