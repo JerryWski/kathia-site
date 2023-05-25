@@ -20,8 +20,33 @@
   }
   .lists_wrapper {
     padding: 20px;
+    color: var(--black);
   }
   .list_header {
     font-size: 1.2rem;
     font-weight: 600;
+    margin: 10px 0 10px 0;
+  }
+  .policy_wrapper {
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (min-width:900px) {
+    .section_container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    .intro_heading {
+      font-size: 5rem;
+    }
+    .policy_header {
+      font-size: 1.3rem;
+    }
+    .lists_wrapper {
+      font-size: 1rem;
+    }
+    .list_header {
+      font-size: 1.5rem;
+    }
   }

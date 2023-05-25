@@ -95,6 +95,7 @@
 @media (min-width: 900px) {
   .intro_heading {
     font-size: 5rem;
+    margin-left: 50px;
   }
   .logo {
     max-width: 40%;

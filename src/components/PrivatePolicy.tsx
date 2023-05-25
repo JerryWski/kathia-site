@@ -3,13 +3,13 @@ import styles from './PrivatePolicy.module.css';
 
 const PrivatePolicty: React.FC = () => {
   return (
-    <section id='private-policy'>
+    <section id='private-policy' className={styles.section_container}>
       <div className={styles.intro_container}>
         <h2 className={styles.intro_heading}>Polityka Prywatności</h2>
       </div>
       <div className={styles.policy_wrapper}>
         <div className={styles.header_container}>
-          <h2 className={styles.header}>
+          <h2 className={styles.policy_header}>
             Polityka prywatności opisuje zasady przetwarzania przez nas
             informacji na Twój temat, w tym danych osobowych oraz ciasteczek,
             czyli tzw. cookies.
@@ -20,15 +20,15 @@ const PrivatePolicty: React.FC = () => {
           <ol>
             <li>
               Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod
-              adresem url: www.plusdlaurody.pl{' '}
+              adresem url: www.stowidokowhome.pl{' '}
             </li>
             <li>
-              Operatorem serwisu oraz Administratorem danych osobowych jest: Jan
-              Kominki Jan Andruszczak www.plusdlaurody.pl{' '}
+              Operatorem serwisu oraz Administratorem danych osobowych jest:
+              Katarzyna Wasilewska www.stowidokowhome.pl{' '}
             </li>
             <li>
               Adres kontaktowy poczty elektronicznej operatora:
-              plusdlaurody@gmail.com{' '}
+              stowidokow.home@gmail.com{' '}
             </li>
             <li>
               Operator jest Administratorem Twoich danych osobowych w
@@ -73,9 +73,13 @@ const PrivatePolicty: React.FC = () => {
               W niektórych sytuacjach Administrator ma prawo przekazywać Twoje
               dane osobowe innym odbiorcom, jeśli będzie to niezbędne do
               wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków
-              ciążących na Administratorze. Dotyczy to takich grup odbiorców: o
-              upoważnieni pracownicy i współpracownicy, którzy korzystają z
-              danych w celu realizacji celu działania strony
+              ciążących na Administratorze. Dotyczy to takich grup odbiorców:{' '}
+              <ul>
+                <li>
+                  upoważnieni pracownicy i współpracownicy, którzy korzystają z
+                  danych w celu realizacji celu działania strony
+                </li>
+              </ul>
             </li>
             <li>
               Twoje dane osobowe przetwarzane przez Administratora nie dłużej,
@@ -85,10 +89,14 @@ const PrivatePolicty: React.FC = () => {
               dłużej niż przez 3 lata.
             </li>
             <li>
-              Przysługuje Ci prawo żądania od Administratora: o dostępu do
-              danych osobowych Ciebie dotyczących, o ich sprostowania, o
-              usunięcia, o ograniczenia przetwarzania, o oraz przenoszenia
-              danych.
+              Przysługuje Ci prawo żądania od Administratora:{' '}
+              <ul>
+                <li>o dostępu do danych osobowych Ciebie dotyczących,</li>
+                <li>
+                  o ich sprostowania, o usunięcia, o ograniczenia przetwarzania,
+                </li>
+                <li>o oraz przenoszenia danych.</li>
+              </ul>
             </li>
             <li>
               Przysługuje Ci prawo do złożenia sprzeciwu w zakresie
@@ -216,7 +224,7 @@ const PrivatePolicty: React.FC = () => {
               końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze
               stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę
               strony internetowej, z której pochodzą, czas przechowywania ich na
-              urządzeniu końcowym oraz unikalny numer. .
+              urządzeniu końcowym oraz unikalny numer.
             </li>
             <li>
               Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika
@@ -224,11 +232,18 @@ const PrivatePolicty: React.FC = () => {
               operator Serwisu.{' '}
             </li>
             <li>
-              Pliki cookies wykorzystywane są w następujących celach: 1.
-              utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki
-              której użytkownik nie musi na każdej podstronie Serwisu ponownie
-              wpisywać loginu i hasła; 2. realizacji celów określonych powyżej w
-              części „Istotne techniki marketingowe”;
+              Pliki cookies wykorzystywane są w następujących celach:{' '}
+              <ul>
+                <li>
+                  utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki
+                  której użytkownik nie musi na każdej podstronie Serwisu
+                  ponownie wpisywać loginu i hasła;
+                </li>
+                <li>
+                  realizacji celów określonych powyżej w części „Istotne
+                  techniki marketingowe”;
+                </li>
+              </ul>
             </li>
             <li>
               {' '}
@@ -279,9 +294,19 @@ const PrivatePolicty: React.FC = () => {
             <li>
               W celu zarządzania ustawienia cookies wybierz z listy poniżej
               przeglądarkę internetową, której używasz i postępuj zgodnie z
-              instrukcjami: o Edge o Internet Explorer o Chrome o Safari o
-              Firefox o Opera Urządzenia mobilne: o Android o Safari (iOS) o
-              Windows Phone */
+              instrukcjami:
+              <ul>
+                <li>Edge</li> <li>Internet Explorer</li> <li>Chrome</li>{' '}
+                <li>Safari</li>
+                <li>Firefox</li>
+                <li>Opera</li>
+              </ul>
+              - Urządzenia mobilne:{' '}
+              <ul>
+                <li>Android</li>
+                <li>Safari (iOS)</li>
+                <li>Windows Phone</li>
+              </ul>
             </li>
           </ol>
         </ol>
