@@ -26,7 +26,7 @@ const WelcomeSection: React.FC = () => {
           </div>
           <div className={styles.slider_wrapper}>
             <img
-              src={require('../images/insta-image.jpg')}
+              src={require('../images/dining-room2.jpg')}
               alt='interior-house'
               className={styles.welcome_image}
             />
