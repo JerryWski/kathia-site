@@ -4,7 +4,7 @@ import scrollToTop from '../utils/ScrollToTop';
 
 const SectionBoxes: React.FC = () => {
   return (
-    <section className={styles.boxes_section}>
+    <section id='boxes' className={styles.boxes_section}>
       <div className={styles.wrapper}>
         <h2 className={styles.boxes_header}>
           Poznajmy <span className={styles.boxes_header__span}>się</span> lepiej

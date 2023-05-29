@@ -65,7 +65,7 @@ const WelcomeSection: React.FC = () => {
         </p>
         <a
           className={styles.link_arrow}
-          href='#home'
+          href='#boxes'
           aria-label='arrow link to scroll down'
         >
           <i className='fa-solid fa-chevron-down fa-2x'></i>
