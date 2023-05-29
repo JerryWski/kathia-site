@@ -10,7 +10,6 @@ const WelcomeSection: React.FC = () => {
           <h1 className={styles.welcome_header}>Marka Własna</h1>
         </div>
         <div className={styles.welcome_image__container}>
-
           <div className={styles.slider_wrapper}>
             <picture>
               <source
@@ -33,7 +32,7 @@ const WelcomeSection: React.FC = () => {
           </div>
           <div className={styles.slider_wrapper}>
             <img
-              src={require('../images/baby-room.jpg')}
+              src={require('../images/baby-room2.jpg')}
               alt='baby-room'
               className={styles.welcome_image}
             />
@@ -52,7 +51,13 @@ const WelcomeSection: React.FC = () => {
               className={styles.welcome_image}
             />
           </div>
-
+          <div className={styles.slider_wrapper}>
+            <img
+              src={require('../images/garden.jpg')}
+              alt='bedroom'
+              className={styles.welcome_image}
+            />
+          </div>
         </div>
 
         <p className={styles.welcome_text__bottom}>

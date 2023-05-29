@@ -30,7 +30,7 @@ const SectionBoxes: React.FC = () => {
             <div className={styles.box_border}></div>
             <img
               className={styles.box_image}
-              src={require('../images/co-op2.jpg')}
+              src={require('../images/dining-room3.jpg')}
               alt='dining-room'
             ></img>
             <Link
@@ -45,7 +45,7 @@ const SectionBoxes: React.FC = () => {
             <div className={styles.box_border}></div>
             <img
               className={styles.box_image}
-              src={require('../images/bedroom.jpg')}
+              src={require('../images/kitchen.jpg')}
               alt='bedroom'
             ></img>
             <Link
