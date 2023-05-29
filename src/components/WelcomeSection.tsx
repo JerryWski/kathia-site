@@ -32,7 +32,7 @@ const WelcomeSection: React.FC = () => {
           </div>
           <div className={styles.slider_wrapper}>
             <img
-              src={require('../images/baby-room2.jpg')}
+              src={require('../images/kitchen2.jpg')}
               alt='baby-room'
               className={styles.welcome_image}
             />
