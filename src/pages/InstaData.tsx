@@ -32,7 +32,7 @@ const InstaStats: React.FC = () => {
           src={require('../images/stowidokow_home2.png')}
           alt='logo'
         />
-        <p className={styles.brand_text}>Marka Własna</p>
+        <p className={styles.brand_text}>Marka Osobista</p>
         <div className={styles.description_container}>
           <p className={styles.description}>
             Zapraszam do zapoznania się ze statystykami na moim Instagramie
