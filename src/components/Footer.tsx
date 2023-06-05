@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <>
     <div className={styles.footer}>
     <span className={styles.footer_overline}></span>
-      <p className={styles.footer_text}>created by Jerry_Wski</p>
+      <p className={styles.footer_text}>created by <a className={styles.footer_link} href="https://jerrywski.github.io/Portfolio-Site/">Jerry_Wski</a></p>
       <p className={styles.footer_year}>© Copyright {currentYear()}</p>
     </div>
     </>
