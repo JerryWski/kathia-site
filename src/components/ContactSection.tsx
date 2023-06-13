@@ -25,11 +25,11 @@ const ContactSection: React.FC = () => {
             <i className='fa-regular fa-envelope fa-2x'></i>
           </a>
           <a
-            href='tel:+48531767911'
+            href='https://www.facebook.com/profile.php?id=100092087125172'
             className={styles.icon_link}
-            aria-label='Link to phone'
+            aria-label='Link to Facebook'
           >
-            <i className='fa-solid fa-mobile-screen-button fa-2x'></i>
+            <i className='fa-brands fa-facebook-f fa-2x'></i>
           </a>
         </div>
       </div>

@@ -72,6 +72,15 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ toggleOverlay, setIsOverl
             </a>
           </li>
           <li className={styles.nav_bar__social_item}>
+            <a
+              href='https://www.facebook.com/profile.php?id=100092087125172'
+              className={styles.icons}
+              aria-label="Link to Facebook"
+            >
+              <i className='fa-brands fa-facebook-f'></i>
+            </a>
+          </li>
+          <li className={styles.nav_bar__social_item}>
             <a href='mailto:stowidokow.home@gmail.com' className={styles.icons} aria-label="Link to e-mail">
               <i className='fa-regular fa-envelope'></i>
             </a>
