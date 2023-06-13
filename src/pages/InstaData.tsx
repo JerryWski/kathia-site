@@ -35,10 +35,10 @@ const InstaStats: React.FC = () => {
         <p className={styles.brand_text}>Marka Osobista</p>
         <div className={styles.description_container}>
           <p className={styles.description}>
-            Zapraszam do zapoznania się ze statystykami na moim Instagramie
+            Zapraszam do zapoznania się z przykładowymi statystykami na moim Instagramie
             <span className={styles.description_span__first}>
               {' '}
-              (ponad 115 tys. obserwujących).
+              (ponad 117 tys. obserwujących).
             </span>
           </p>
           <p className={styles.description}>
@@ -51,7 +51,7 @@ const InstaStats: React.FC = () => {
           <p className={styles.description}>
             Jeśli jesteś zainteresowany/a reklamą lub współpracą na moich
             kanałach SM, daj znać poprzez{' '}
-            <span className={styles.description_span}>email</span>.
+            <span className={styles.description_span}><a href='mailto:stowidokow.home@gmail.com'>email</a></span>.
           </p>
         </div>
         <div className={styles.screens_container}>{screenItems}</div>

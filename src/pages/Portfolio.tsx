@@ -10,19 +10,19 @@ const Portfolio: React.FC = () => {
           <h2 className={styles.intro_heading}>Portfolio</h2>
           <div className={styles.intro_description}>
             <p className={styles.intro_text}>
-              Oprócz tematów wnętrzarskich, od zawsze interesował ją marketing w
-              social mediach. Swoją wiedzę zgłębiła w praktyce prowadząc z
+              Oprócz tematów wnętrzarskich, od zawsze interesował mnie marketing w
+              social mediach. Swoją wiedzę zgłębiłam w praktyce prowadząc z
               powodzeniem konta w social mediach dwóch sklepów internetowych. Na
-              swoim kanale dzieli się też często tipami dotyczącymi prowadzenia
-              profilu na Instagramie, a swoją wiedzę spisała w{' '}
+              swoim kanale dzielę się też często tipami dotyczącymi prowadzenia
+              profilu na Instagramie, a swoją wiedzę spisałam w{' '}
               <span className={styles.intro_span}>
                 e-booku pt. „Jak rozwinąć konto wnętrzarskie . 10 kroków do
                 sukcesu”.{' '}
               </span>
             </p>
             <p className={styles.intro_text}>
-              O tym, czym dla niej jest Instagram, jak zbudować zaangażowaną
-              społeczność i jak działa algorytm opowiedziała psycholog Ewelinie
+              O tym, czym dla mnie jest Instagram, jak zbudować zaangażowaną
+              społeczność i jak działa algorytm opowiedziałam psycholog Ewelinie
               Wojciechowskiej w wywiadzie live:{' '}
               <a
                 className={styles.intro_link}
@@ -33,9 +33,9 @@ const Portfolio: React.FC = () => {
               </a>
             </p>
             <p className={styles.intro_text}>
-              Wyznacznikiem współpracy jest zawsze dla niej jakość, dlatego też
-              podejmuje się reklamowania produktów, pod którymi podpisuje się
-              obiema rękami. W realizację projektów z markami zawsze wkłada całe
+              Wyznacznikiem współpracy jest zawsze dla mnie jakość, dlatego też
+              podejmuje się reklamowania produktów, pod którymi podpisuję się
+              obiema rękami. W realizację projektów z markami zawsze wkładam całe
               serce i zaangażowanie, aby reklama była ciekawa.
             </p>
             <span className={styles.intro_span}>

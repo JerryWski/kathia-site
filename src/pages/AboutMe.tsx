@@ -1,5 +1,7 @@
 import styles from './AboutMe.module.css';
 import ContactSection from '../components/ContactSection';
+import { Link } from 'react-router-dom';
+import scrollToTop from '../utils/ScrollToTop';
 
 const AboutMe: React.FC = () => {
   return (
@@ -24,31 +26,56 @@ const AboutMe: React.FC = () => {
               className={styles.bio_link}
               href='https://www.instagram.com/stowidokow.home/'
             >
-            @stowidokow.home
+              @stowidokow.home
             </a>
-            . Miłośniczka kawy i przytulnych wnętrz. Choć w życiu zawodowym
-            zajmowała się głównie rekrutacją, sprzedażą i szkoleniami, to pasja
-            do wnętrz i fotografii sprawiła, że prowadzenie tego profilu sprawia
-            jej najwięcej radości.
+            . Jestem miłośniczką kawy i przytulnych wnętrz. Choć w życiu
+            zawodowym zajmuję się głównie rekrutacją, sprzedażą i szkoleniami,
+            to pasja do wnętrz i fotografii sprawiła, że prowadzenie tego
+            profilu sprawia mi najwięcej radości.
           </p>
           <p className={styles.bio_descritpion}>
-            Uczestniczyła w szkoleniach z social mediów, nadzorowała od strony
-            marketingowej pracę dwóch sklepów internetowych, dzięki czemu nabyła
-            kompetencje z zakresu influencer marketingu. Udziela na swoim koncie
-            porad poszerzających wiedzę o Instagramie i z zakresu rozwijania
-            profilu wnętrzarskiego.
-          </p>
-          <p className={styles.bio_descritpion}>
-            Jej marzeniem od zawsze było napisać własną książkę, póki co wydała
-            <a className={styles.bio_link} href=''>
+            Uczestniczyłam w licznych szkoleniach z social mediów, nadzorowałam
+            od strony marketingowej pracę dwóch sklepów internetowych, dzięki
+            czemu nabyłam kompetencje z zakresu influencer marketingu.
+            Udzielałam na swoim koncie porad poszerzających wiedzę o Instagramie
+            i z zakresu rozwijania profilu wnętrzarskiego, czego owocem jest
+            wydany w 2021 r.{' '}
+            <a
+              className={styles.bio_link}
+              href='https://www.instagram.com/stowidokow.home/'
+            >
               {' '}
-              e-booka
+              e-book
             </a>{' '}
-            i ma apetyt na więcej!
+          </p>
+          <p className={styles.bio_descritpion}>
+            Obecnie obserwuje mnie 117 tys. osób na Instagramie, a dzięki
+            połączeniu znajomości e- commerce z zaangażowaniem mojej
+            społeczności, udaje mi się uzyskiwać całkiem dobre{' '}
+            <Link
+              className={styles.bio_link}
+              to='/insta-stats'
+              onClick={scrollToTop}
+            >
+              {' '}
+              Statystyki
+            </Link>
+            . Przy prezentacji zarówno wnętrz swojego domu, jak i reklamowanych
+            produktów zawsze liczy się dla mnie estetyczna forma oraz jakość.
+          </p>
+          <p className={styles.bio_descritpion}>
+            Jeśli jesteś zainteresowany reklamą na tej stronie lub na moich
+            kanałach SM, wyślij wiadomość na adres:{' '}
+            <a
+              className={styles.bio_link}
+              href='mailto:stowidokow.home@gmail.com'
+            >
+              stowidokowhome@gmail.com
+            </a>
           </p>
         </div>
       </div>
-      <ContactSection/>
+      <ContactSection />
     </section>
   );
 };

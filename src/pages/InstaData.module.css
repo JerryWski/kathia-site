@@ -54,7 +54,7 @@
 }
 .description_span {
   text-decoration: none;
-  color: inherit;
+  
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
@@ -62,7 +62,11 @@
   cursor: pointer;
   transition: color 0.2s ease-in;
 }
-.description_span:hover {
+.description_span a {
+  text-decoration: none;
+  color: var(--black);
+}
+.description_span a:hover {
   color: var(--beige);
 }
 .description_span__first {

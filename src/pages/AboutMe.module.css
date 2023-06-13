@@ -84,6 +84,7 @@ color: var(--black);
   }
   .image_container {
     order: 1;
+    height: 350px;
   }
   .intro_container {
     padding-left: 50px;

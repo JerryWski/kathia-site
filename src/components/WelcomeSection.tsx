@@ -61,7 +61,7 @@ const WelcomeSection: React.FC = () => {
         </div>
 
         <p className={styles.welcome_text__bottom}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit Culpa
+          An empty room is a story waiting to happen and you are the Author
         </p>
         <a
           className={styles.link_arrow}
