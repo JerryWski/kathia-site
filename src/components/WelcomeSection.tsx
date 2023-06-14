@@ -61,7 +61,7 @@ const WelcomeSection: React.FC = () => {
         </div>
 
         <p className={styles.welcome_text__bottom}>
-          An empty room is a story waiting to happen and you are the Author
+          Pusty pokój to historia, która czeka na to, aby się wydarzyć, a ty jesteś jej autorem
         </p>
         <a
           className={styles.link_arrow}
