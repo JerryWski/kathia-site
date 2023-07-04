@@ -118,7 +118,7 @@ font-family: var(--font);
 
 @media (min-width: 900px) {
   .portfolio_lists__container {
-    width: 90vw;
+    width: 80vw;
   }
   .intro_description {
     max-width: 1440px;
