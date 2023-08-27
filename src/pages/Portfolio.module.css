@@ -49,8 +49,8 @@ font-family: var(--font);
   color: var(--beige);
 }
 .portfolio_lists__container {
-  padding: 10px;
-  width: auto;
+  padding: 0px;
+  width: 0 auto;
 }
 .portfolio_lists {
   display: flex;
@@ -67,7 +67,7 @@ font-family: var(--font);
 .portfolio_item {
   width: 280px;
   height: 330px;
-  margin: 60px;
+  margin: 30px 15px;
   padding: 20px;
   /* border-radius: 3px; */
   background-color: var(--beige);
@@ -119,6 +119,9 @@ font-family: var(--font);
 @media (min-width: 900px) {
   .portfolio_lists__container {
     width: 80vw;
+  }
+  .portfolio_item {
+    margin: 60px;
   }
   .intro_description {
     max-width: 1440px;
