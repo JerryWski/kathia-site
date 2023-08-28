@@ -24,7 +24,7 @@ export const imageList = [
     id: 4,
     image: require('./images/biostar.png'),
     title: 'BioStar',
-    text: ' Reklama wysokiej klasy naturalnych środków czystości:',
+    text: ' Reklama wysokiej klasy naturalnych środków czystości',
     link: 'https://www.instagram.com/reel/Ce0LBcfjaUq/?igshid=YmMyMTA2M2Y%3D'
   },
   {
@@ -40,5 +40,12 @@ export const imageList = [
     title: 'Restilo',
     text: 'Nowoczesny sklep internetowy z artykułami do domu',
     link: 'https://shorturl.at/jmpP7'
+  },
+  {
+    id: 7,
+    image: require('./images/bellami.jpg'),
+    title: 'Beliani',
+    text: 'Współpraca ze szwajcarskim internetowym sklepem meblowym',
+    link: 'https://www.instagram.com/reel/Cvg2y7UM6tc/?igshid=MTc4MmM1YmI2Ng=='
   }
 ];
