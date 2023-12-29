@@ -38,7 +38,7 @@ const InstaStats: React.FC = () => {
             Zapraszam do zapoznania się z przykładowymi statystykami na moim Instagramie
             <span className={styles.description_span__first}>
               {' '}
-              (ponad 119 tys. obserwujących).
+              (ponad 122 tys. obserwujących).
             </span>
           </p>
           <p className={styles.description}>
